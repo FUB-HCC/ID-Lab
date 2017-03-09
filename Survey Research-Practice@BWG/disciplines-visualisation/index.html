@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Visualisation</title>
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+</style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+
+
+	<svg width="960" height="600"></svg>
+
+
+<script>
+
+var miserables = {
+  "nodes": [
+
+    {"id": "A", "group": 1},
+    {"id": "B", "group": 1},
+    {"id": "C", "group": 1},
+    {"id": "D", "group": 1},
+    {"id": "E", "group": 1},
+    {"id": "F", "group": 1},
+    {"id": "G", "group": 1},
+    {"id": "H", "group": 1},
+    {"id": "I", "group": 1},
+    {"id": "J", "group": 1},
+    {"id": "K", "group": 1},
+    {"id": "L", "group": 1},
+    {"id": "M", "group": 1},
+    {"id": "N", "group": 1},
+    {"id": "O", "group": 1},
+    {"id": "P", "group": 1},
+    {"id": "Q", "group": 1},
+    {"id": "R", "group": 1},
+    {"id": "S", "group": 1},
+    {"id": "T", "group": 1},
+    {"id": "U", "group": 1},
+    {"id": "V", "group": 1},
+    {"id": "W", "group": 1},
+    {"id": "X", "group": 1},
+    {"id": "Y", "group": 1},
+    {"id": "Z", "group": 1},
+
+    {"id": "Anthropologie", "group": 2},
+    {"id": "Archäologie", "group": 2},
+    {"id": "Architektur", "group": 2},
+    {"id": "Asienwissenschaften und Afrikanistik", "group": 2},
+    {"id": "Bauingenieurwesen, Bauwesen", "group": 2},
+    {"id": "Bibliotheks- und Informationswissenschaft", "group": 2},
+    {"id": "Biologie", "group": 2},
+    {"id": "Computer Science", "group": 2},
+    {"id": "Conservation Sciences", "group": 2},
+    {"id": "Design", "group": 2},
+    {"id": "Design Theory", "group": 2},
+    {"id": "Engineering", "group": 2},
+    {"id": "Ethnologie", "group": 2},
+    {"id": "Geobiologie", "group": 2},
+    {"id": "Germanistik", "group": 2},
+    {"id": "Geschichtswissenschaft", "group": 2},
+    {"id": "Interaction Design", "group": 2},
+    {"id": "Kommunikationsdesign", "group": 2},
+    {"id": "Kulturhistorie und -theorie", "group": 2},
+    {"id": "Kunst und Visual History", "group": 2},
+    {"id": "Literaturwissenschaft", "group": 2},
+    {"id": "Materialwissenschaft", "group": 2},
+    {"id": "Mathematik", "group": 2},
+    {"id": "Medienwissenschaften", "group": 2},
+    {"id": "Medizin", "group": 2},
+    {"id": "Ökologie", "group": 2},
+    {"id": "Philosophie", "group": 2},
+    {"id": "Physik", "group": 2},
+    {"id": "Politikwissenschaft, Rechtswissenschaft", "group": 2},
+    {"id": "Psychologie", "group": 2},
+    {"id": "Sound Studies", "group": 2},
+    {"id": "Soziologie", "group": 2},
+    {"id": "Sprachwissenschaft/Linguistik", "group": 2},
+    {"id": "Theaterwissenschaft", "group": 2},
+    {"id": "Urban Studies", "group": 2},
+    {"id": "Wissenschaftsgeschichte", "group": 2},
+    {"id": "Andere", "group": 2}
+
+  ],
+  "links": [
+
+	//1: Interesse an Zusammenarbeit
+	//2: Eigene Diziplin(en)
+	//3: Zusammenarbeit
+
+{"source": "A", "target": "Anthropologie", "value": 1},
+{"source": "E", "target": "Anthropologie", "value": 3},
+{"source": "F", "target": "Anthropologie", "value": 1},
+{"source": "G", "target": "Anthropologie", "value": 1},
+{"source": "H", "target": "Anthropologie", "value": 1},
+{"source": "I", "target": "Anthropologie", "value": 1},
+{"source": "J", "target": "Anthropologie", "value": 2},
+{"source": "K", "target": "Anthropologie", "value": 1},
+{"source": "M", "target": "Anthropologie", "value": 3},
+{"source": "O", "target": "Anthropologie", "value": 1},
+{"source": "S", "target": "Anthropologie", "value": 3},
+{"source": "X", "target": "Anthropologie", "value": 1},
+
+{"source": "G", "target": "Archäologie", "value": 3},
+{"source": "I", "target": "Archäologie", "value": 1},
+{"source": "M", "target": "Archäologie", "value": 3},
+{"source": "N", "target": "Archäologie", "value": 1},
+{"source": "Q", "target": "Archäologie", "value": 1},
+{"source": "X", "target": "Archäologie", "value": 1},
+
+{"source": "F", "target": "Architektur", "value": 3},
+{"source": "G", "target": "Architektur", "value": 3},
+{"source": "H", "target": "Architektur", "value": 1},
+{"source": "I", "target": "Architektur", "value": 2},
+{"source": "K", "target": "Architektur", "value": 3},
+{"source": "M", "target": "Architektur", "value": 3},
+{"source": "O", "target": "Architektur", "value": 1},
+{"source": "Q", "target": "Architektur", "value": 3},
+{"source": "R", "target": "Architektur", "value": 3},
+{"source": "S", "target": "Architektur", "value": 2},
+{"source": "U", "target": "Architektur", "value": 3},
+{"source": "X", "target": "Architektur", "value": 3},
+
+{"source": "I", "target": "Asienwissenschaften und Afrikanistik", "value": 1},
+
+{"source": "G", "target": "Bauingenieurwesen, Bauwesen", "value": 1},
+{"source": "O", "target": "Bauingenieurwesen, Bauwesen", "value": 1},
+
+{"source": "O", "target": "Bauingenieurwesen, Bauwesen", "value": 1},
+
+{"source": "F", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+{"source": "G", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+{"source": "H", "target": "Bibliotheks- und Informationswissenschaft", "value": 2},
+{"source": "I", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+{"source": "J", "target": "Bibliotheks- und Informationswissenschaft", "value": 3},
+{"source": "Q", "target": "Bibliotheks- und Informationswissenschaft", "value": 3},
+{"source": "R", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+{"source": "S", "target": "Bibliotheks- und Informationswissenschaft", "value": 3},
+{"source": "T", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+{"source": "U", "target": "Bibliotheks- und Informationswissenschaft", "value": 1},
+
+{"source": "A", "target": "Biologie", "value": 2},
+{"source": "I", "target": "Biologie", "value": 3},
+{"source": "K", "target": "Biologie", "value": 3},
+{"source": "L", "target": "Biologie", "value": 3},
+{"source": "O", "target": "Biologie", "value": 3},
+{"source": "S", "target": "Biologie", "value": 3},
+{"source": "U", "target": "Biologie", "value": 1},
+{"source": "X", "target": "Biologie", "value": 3},
+
+{"source": "B", "target": "Computer Science", "value": 3},
+{"source": "D", "target": "Computer Science", "value": 3},
+{"source": "F", "target": "Computer Science", "value": 3},
+{"source": "G", "target": "Computer Science", "value": 1},
+{"source": "H", "target": "Computer Science", "value": 2},
+{"source": "I", "target": "Computer Science", "value": 3},
+{"source": "J", "target": "Computer Science", "value": 3},
+{"source": "N", "target": "Computer Science", "value": 1},
+{"source": "O", "target": "Computer Science", "value": 1},
+{"source": "P", "target": "Computer Science", "value": 2},
+{"source": "Q", "target": "Computer Science", "value": 2},
+{"source": "R", "target": "Computer Science", "value": 2},
+{"source": "S", "target": "Computer Science", "value": 3},
+{"source": "U", "target": "Computer Science", "value": 3},
+{"source": "X", "target": "Computer Science", "value": 3},
+{"source": "Y", "target": "Computer Science", "value": 3},
+{"source": "Z", "target": "Computer Science", "value": 1},
+
+{"source": "D", "target": "Conservation Sciences", "value": 1},
+{"source": "O", "target": "Conservation Sciences", "value": 1},
+{"source": "X", "target": "Conservation Sciences", "value": 1},
+
+{"source": "B", "target": "Design", "value": 3},
+{"source": "C", "target": "Design", "value": 3},
+{"source": "D", "target": "Design", "value": 3},
+{"source": "E", "target": "Design", "value": 1},
+{"source": "F", "target": "Design", "value": 1},
+{"source": "G", "target": "Design", "value": 1},
+{"source": "H", "target": "Design", "value": 2},
+{"source": "I", "target": "Design", "value": 3},
+{"source": "J", "target": "Design", "value": 3},
+{"source": "L", "target": "Design", "value": 3},
+{"source": "M", "target": "Design", "value": 2},
+{"source": "N", "target": "Design", "value": 2},
+{"source": "O", "target": "Design", "value": 1},
+{"source": "P", "target": "Design", "value": 3},
+{"source": "Q", "target": "Design", "value": 3},
+{"source": "R", "target": "Design", "value": 3},
+{"source": "S", "target": "Design", "value": 3},
+{"source": "T", "target": "Design", "value": 3},
+{"source": "U", "target": "Design", "value": 2},
+{"source": "X", "target": "Design", "value": 3},
+{"source": "Y", "target": "Design", "value": 2},
+{"source": "Z", "target": "Design", "value": 2},
+
+{"source": "B", "target": "Design Theory", "value": 3},
+{"source": "C", "target": "Design Theory", "value": 3},
+{"source": "D", "target": "Design Theory", "value": 1},
+{"source": "E", "target": "Design Theory", "value": 1},
+{"source": "H", "target": "Design Theory", "value": 1},
+{"source": "I", "target": "Design Theory", "value": 1},
+{"source": "N", "target": "Design Theory", "value": 2},
+{"source": "O", "target": "Design Theory", "value": 3},
+{"source": "S", "target": "Design Theory", "value": 1},
+{"source": "T", "target": "Design Theory", "value": 3},
+{"source": "U", "target": "Design Theory", "value": 1},
+{"source": "X", "target": "Design Theory", "value": 1},
+{"source": "Z", "target": "Design Theory", "value": 1},
+
+{"source": "H", "target": "Engineering", "value": 1},
+{"source": "I", "target": "Engineering", "value": 1},
+{"source": "P", "target": "Engineering", "value": 1},
+{"source": "R", "target": "Engineering", "value": 1},
+{"source": "Z", "target": "Engineering", "value": 3},
+
+{"source": "B", "target": "Ethnologie", "value": 3},
+{"source": "E", "target": "Ethnologie", "value": 3},
+{"source": "G", "target": "Ethnologie", "value": 1},
+{"source": "H", "target": "Ethnologie", "value": 1},
+{"source": "I", "target": "Ethnologie", "value": 3},
+{"source": "J", "target": "Ethnologie", "value": 2},
+{"source": "K", "target": "Ethnologie", "value": 3},
+{"source": "M", "target": "Ethnologie", "value": 3},
+{"source": "O", "target": "Ethnologie", "value": 1},
+{"source": "S", "target": "Ethnologie", "value": 3},
+{"source": "Y", "target": "Ethnologie", "value": 3},
+{"source": "Z", "target": "Ethnologie", "value": 1},
+
+{"source": "G", "target": "Geobiologie", "value": 1},
+
+{"source": "B", "target": "Germanistik", "value": 3},
+{"source": "H", "target": "Germanistik", "value": 3},
+{"source": "S", "target": "Germanistik", "value": 3},
+{"source": "U", "target": "Germanistik", "value": 1},
+{"source": "X", "target": "Germanistik", "value": 1},
+
+{"source": "C", "target": "Geschichtswissenschaft", "value": 3},
+{"source": "G", "target": "Geschichtswissenschaft", "value": 1},
+{"source": "K", "target": "Geschichtswissenschaft", "value": 1},
+{"source": "O", "target": "Geschichtswissenschaft", "value": 3},
+{"source": "S", "target": "Geschichtswissenschaft", "value": 3},
+{"source": "V", "target": "Geschichtswissenschaft", "value": 2},
+
+{"source": "B", "target": "Interaction Design", "value": 3},
+{"source": "D", "target": "Interaction Design", "value": 1},
+{"source": "F", "target": "Interaction Design", "value": 3},
+{"source": "G", "target": "Interaction Design", "value": 1},
+{"source": "H", "target": "Interaction Design", "value": 1},
+{"source": "I", "target": "Interaction Design", "value": 3},
+{"source": "J", "target": "Interaction Design", "value": 3},
+{"source": "K", "target": "Interaction Design", "value": 3},
+{"source": "N", "target": "Interaction Design", "value": 2},
+{"source": "O", "target": "Interaction Design", "value": 3},
+{"source": "P", "target": "Interaction Design", "value": 3},
+{"source": "Q", "target": "Interaction Design", "value": 3},
+{"source": "R", "target": "Interaction Design", "value": 3},
+{"source": "S", "target": "Interaction Design", "value": 3},
+{"source": "U", "target": "Interaction Design", "value": 2},
+{"source": "Y", "target": "Interaction Design", "value": 2},
+{"source": "Z", "target": "Interaction Design", "value": 2},
+
+{"source": "C", "target": "Kommunikationsdesign", "value": 3},
+{"source": "D", "target": "Kommunikationsdesign", "value": 1},
+{"source": "F", "target": "Kommunikationsdesign", "value": 2},
+{"source": "H", "target": "Kommunikationsdesign", "value": 1},
+{"source": "N", "target": "Kommunikationsdesign", "value": 2},
+{"source": "O", "target": "Kommunikationsdesign", "value": 1},
+{"source": "R", "target": "Kommunikationsdesign", "value": 1},
+{"source": "S", "target": "Kommunikationsdesign", "value": 1},
+{"source": "T", "target": "Kommunikationsdesign", "value": 3},
+{"source": "U", "target": "Kommunikationsdesign", "value": 1},
+{"source": "Z", "target": "Kommunikationsdesign", "value": 1},
+
+{"source": "B", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "C", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "E", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "F", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "G", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "I", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "J", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "K", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "L", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "M", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "O", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "S", "target": "Kulturhistorie und -theorie", "value": 3},
+{"source": "T", "target": "Kulturhistorie und -theorie", "value": 2},
+{"source": "X", "target": "Kulturhistorie und -theorie", "value": 3},
+
+{"source": "C", "target": "Kunst und Visual History", "value": 3},
+{"source": "I", "target": "Kunst und Visual History", "value": 1},
+{"source": "M", "target": "Kunst und Visual History", "value": 2},
+{"source": "O", "target": "Kunst und Visual History", "value": 3},
+{"source": "S", "target": "Kunst und Visual History", "value": 3},
+{"source": "T", "target": "Kunst und Visual History", "value": 3},
+{"source": "U", "target": "Kunst und Visual History", "value": 1},
+{"source": "X", "target": "Kunst und Visual History", "value": 2},
+{"source": "Z", "target": "Kunst und Visual History", "value": 1},
+
+{"source": "E", "target": "Literaturwissenschaft", "value": 3},
+{"source": "H", "target": "Literaturwissenschaft", "value": 3},
+{"source": "I", "target": "Literaturwissenschaft", "value": 3},
+{"source": "M", "target": "Literaturwissenschaft", "value": 3},
+{"source": "O", "target": "Literaturwissenschaft", "value": 1},
+{"source": "S", "target": "Literaturwissenschaft", "value": 1},
+{"source": "T", "target": "Literaturwissenschaft", "value": 1},
+{"source": "U", "target": "Literaturwissenschaft", "value": 1},
+{"source": "V", "target": "Literaturwissenschaft", "value": 2},
+{"source": "X", "target": "Literaturwissenschaft", "value": 1},
+
+{"source": "A", "target": "Materialwissenschaft", "value": 1},
+{"source": "G", "target": "Materialwissenschaft", "value": 1},
+{"source": "H", "target": "Materialwissenschaft", "value": 1},
+{"source": "I", "target": "Materialwissenschaft", "value": 1},
+{"source": "K", "target": "Materialwissenschaft", "value": 3},
+{"source": "O", "target": "Materialwissenschaft", "value": 1},
+{"source": "S", "target": "Materialwissenschaft", "value": 3},
+{"source": "U", "target": "Materialwissenschaft", "value": 1},
+{"source": "X", "target": "Materialwissenschaft", "value": 3},
+{"source": "Z", "target": "Materialwissenschaft", "value": 1},
+
+{"source": "I", "target": "Mathematik", "value": 1},
+{"source": "O", "target": "Mathematik", "value": 3},
+{"source": "R", "target": "Mathematik", "value": 1},
+{"source": "S", "target": "Mathematik", "value": 1},
+{"source": "U", "target": "Mathematik", "value": 1},
+{"source": "X", "target": "Mathematik", "value": 1},
+
+{"source": "B", "target": "Medienwissenschaften", "value": 3},
+{"source": "C", "target": "Medienwissenschaften", "value": 1},
+{"source": "D", "target": "Medienwissenschaften", "value": 2},
+{"source": "F", "target": "Medienwissenschaften", "value": 1},
+{"source": "G", "target": "Medienwissenschaften", "value": 2},
+{"source": "I", "target": "Medienwissenschaften", "value": 3},
+{"source": "K", "target": "Medienwissenschaften", "value": 1},
+{"source": "L", "target": "Medienwissenschaften", "value": 2},
+{"source": "N", "target": "Medienwissenschaften", "value": 3},
+{"source": "O", "target": "Medienwissenschaften", "value": 3},
+{"source": "S", "target": "Medienwissenschaften", "value": 1},
+{"source": "T", "target": "Medienwissenschaften", "value": 3},
+{"source": "U", "target": "Medienwissenschaften", "value": 1},
+{"source": "X", "target": "Medienwissenschaften", "value": 3},
+
+{"source": "B", "target": "Medizin", "value": 3},
+{"source": "C", "target": "Medizin", "value": 1},
+{"source": "D", "target": "Medizin", "value": 1},
+{"source": "E", "target": "Medizin", "value": 1},
+{"source": "F", "target": "Medizin", "value": 1},
+{"source": "J", "target": "Medizin", "value": 3},
+{"source": "K", "target": "Medizin", "value": 1},
+{"source": "M", "target": "Medizin", "value": 3},
+{"source": "N", "target": "Medizin", "value": 3},
+{"source": "O", "target": "Medizin", "value": 1},
+{"source": "R", "target": "Medizin", "value": 1},
+{"source": "U", "target": "Medizin", "value": 1},
+{"source": "X", "target": "Medizin", "value": 3},
+{"source": "Z", "target": "Medizin", "value": 3},
+
+{"source": "G", "target": "Ökologie", "value": 1},
+{"source": "M", "target": "Ökologie", "value": 3},
+{"source": "X", "target": "Ökologie", "value": 1},
+
+{"source": "A", "target": "Philosophie", "value": 1},
+{"source": "B", "target": "Philosophie", "value": 2},
+{"source": "H", "target": "Philosophie", "value": 3},
+{"source": "I", "target": "Philosophie", "value": 1},
+{"source": "J", "target": "Philosophie", "value": 2},
+{"source": "L", "target": "Philosophie", "value": 3},
+{"source": "O", "target": "Philosophie", "value": 2},
+{"source": "T", "target": "Philosophie", "value": 3},
+{"source": "U", "target": "Philosophie", "value": 1},
+{"source": "X", "target": "Philosophie", "value": 2},
+{"source": "Z", "target": "Philosophie", "value": 1},
+
+{"source": "A", "target": "Physik", "value": 1},
+{"source": "G", "target": "Physik", "value": 3},
+{"source": "I", "target": "Physik", "value": 3},
+{"source": "O", "target": "Physik", "value": 1},
+{"source": "R", "target": "Physik", "value": 1},
+{"source": "U", "target": "Physik", "value": 1},
+{"source": "Y", "target": "Physik", "value": 1},
+
+{"source": "B", "target": "Politikwissenschaft, Rechtswissenschaft", "value": 3},
+{"source": "H", "target": "Politikwissenschaft, Rechtswissenschaft", "value": 1},
+{"source": "K", "target": "Politikwissenschaft, Rechtswissenschaft", "value": 1},
+{"source": "O", "target": "Politikwissenschaft, Rechtswissenschaft", "value": 1},
+{"source": "X", "target": "Politikwissenschaft, Rechtswissenschaft", "value": 1},
+
+{"source": "C", "target": "Psychologie", "value": 1},
+{"source": "D", "target": "Psychologie", "value": 1},
+{"source": "E", "target": "Psychologie", "value": 3},
+{"source": "H", "target": "Psychologie", "value": 1},
+{"source": "I", "target": "Psychologie", "value": 3},
+{"source": "J", "target": "Psychologie", "value": 3},
+{"source": "L", "target": "Psychologie", "value": 3},
+{"source": "O", "target": "Psychologie", "value": 1},
+{"source": "P", "target": "Psychologie", "value": 1},
+{"source": "U", "target": "Psychologie", "value": 1},
+{"source": "X", "target": "Psychologie", "value": 1},
+{"source": "Z", "target": "Psychologie", "value": 1},
+
+{"source": "B", "target": "Sound Studies", "value": 3},
+{"source": "G", "target": "Sound Studies", "value": 2},
+{"source": "I", "target": "Sound Studies", "value": 1},
+{"source": "M", "target": "Sound Studies", "value": 3},
+{"source": "O", "target": "Sound Studies", "value": 1},
+{"source": "Q", "target": "Sound Studies", "value": 1},
+{"source": "R", "target": "Sound Studies", "value": 1},
+{"source": "U", "target": "Sound Studies", "value": 1},
+
+{"source": "C", "target": "Soziologie", "value": 1},
+{"source": "G", "target": "Soziologie", "value": 1},
+{"source": "H", "target": "Soziologie", "value": 1},
+{"source": "I", "target": "Soziologie", "value": 3},
+{"source": "J", "target": "Soziologie", "value": 1},
+{"source": "K", "target": "Soziologie", "value": 2},
+{"source": "O", "target": "Soziologie", "value": 1},
+{"source": "S", "target": "Soziologie", "value": 3},
+{"source": "X", "target": "Soziologie", "value": 3},
+{"source": "Z", "target": "Soziologie", "value": 1},
+
+{"source": "B", "target": "Sprachwissenschaft/Linguistik", "value": 3},
+{"source": "J", "target": "Sprachwissenschaft/Linguistik", "value": 3},
+{"source": "O", "target": "Sprachwissenschaft/Linguistik", "value": 3},
+{"source": "S", "target": "Sprachwissenschaft/Linguistik", "value": 3},
+{"source": "Z", "target": "Sprachwissenschaft/Linguistik", "value": 3},
+
+{"source": "B", "target": "Theaterwissenschaft", "value": 2},
+{"source": "H", "target": "Theaterwissenschaft", "value": 3},
+{"source": "I", "target": "Theaterwissenschaft", "value": 1},
+{"source": "J", "target": "Theaterwissenschaft", "value": 3},
+{"source": "M", "target": "Theaterwissenschaft", "value": 3},
+{"source": "O", "target": "Theaterwissenschaft", "value": 2},
+{"source": "S", "target": "Theaterwissenschaft", "value": 3},
+{"source": "X", "target": "Theaterwissenschaft", "value": 1},
+{"source": "Z", "target": "Theaterwissenschaft", "value": 3},
+
+{"source": "G", "target": "Urban Studies", "value": 1},
+{"source": "H", "target": "Urban Studies", "value": 1},
+{"source": "I", "target": "Urban Studies", "value": 1},
+{"source": "O", "target": "Urban Studies", "value": 1},
+{"source": "X", "target": "Urban Studies", "value": 1},
+
+{"source": "A", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "B", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "C", "target": "Wissenschaftsgeschichte", "value": 2},
+{"source": "E", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "G", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "I", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "J", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "L", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "M", "target": "Wissenschaftsgeschichte", "value": 3},
+{"source": "O", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "P", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "S", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "T", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "U", "target": "Wissenschaftsgeschichte", "value": 1},
+{"source": "X", "target": "Wissenschaftsgeschichte", "value": 2},
+
+{"source": "I", "target": "Andere", "value": 3},
+{"source": "O", "target": "Andere", "value": 2},
+{"source": "V", "target": "Andere", "value": 2},
+{"source": "W", "target": "Andere", "value": 2}
+
+  ]
+};
+
+
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var relation_type = function (val) {
+	var ret = '';
+	//1: Interesse an Zusammenarbeit
+	//2: Eigene Diziplin(en)
+	//3: Zusammenarbeit
+	switch (val) {
+		case 1:
+			ret = 'Interesse an Zusammenarbeit';
+			break;
+		case 2:
+			ret = 'Eigene Diziplin';
+			break;
+		case 3:
+			ret = 'Zusammenarbeit';
+			break;
+	}
+	return ret;
+}
+
+var node_fill = function (group) {
+	var ret_color = '';
+	switch (group) {
+		// Personen
+		case 1:
+			ret_color = '#AA1030';
+			break;
+		// Disziplinen
+		case 2:
+			ret_color = '#FFFF00';
+			break;
+	}
+	return ret_color;
+};
+
+// var color = d3.scaleOrdinal(d3.schemeCategory20);
+var link_color = function (c) {
+	var ret_color = '';
+	switch (c) {
+		case 1:
+			ret_color = '#00FFFF';
+			break;
+		case 2:
+			ret_color = '#FF0000';
+			break;
+		case 3:
+			ret_color = '#FFFF00';
+			break;
+	}
+	return ret_color;
+}
+var link_width = function (w) {
+	var ret_width = 2;
+	switch (w) {
+	//1: Interesse an Zusammenarbeit
+		case 1:
+			ret_width = 1;
+			break;
+	//2: Eigene Diziplin(en)
+		case 2:
+			ret_width = 4;
+			break;
+	//3: Zusammenarbeit
+		case 3:
+			ret_width = 3;
+			break;
+	}
+	return ret_width;
+}
+
+
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.001))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+  var link = svg.append("g")
+      .attr("class", "links")
+    .selectAll("line")
+    .data(miserables.links)
+    .enter()
+    .append("line")
+      .attr("stroke", function(d) {
+      	return link_color(d.value);
+      })
+      .attr("stroke-width", function(d) {
+      	return link_width(d.value);
+      });
+
+  link.append("title")
+      .text(function(d) {
+      	return relation_type(d.value);
+      });
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+    .selectAll("circle")
+    .data(miserables.nodes)
+    .enter()
+    .append("circle")
+      .attr("r", 5)
+      .attr("fill", function(d) { return node_fill(d.group); }) // color(d.group);
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.append("title")
+      .text(function(d) {
+      	return d.id;
+      });
+
+  simulation
+      .nodes(miserables.nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .links(miserables.links);
+
+  function ticked() {
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+</script>
+
+</body>
+</html>

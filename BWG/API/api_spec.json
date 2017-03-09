@@ -1,0 +1,763 @@
+
+==================================================
+
+To discuss:
+- Auflösen: Category table, alle Relationstabellen
+- Einheitliches date format
+- "urls" = ?
+- Unterobjekte? z.B. main_image = { ... }
+- Ist Verlinkung komplett?
+- Welche Tabellen haben Tags? Alle?
+- andere Verlinkung? Z.B. keine Verlinkung über Foreign Keys, sondern direkt Array mit vollständigen Objekten.
+- bessere Bezeichnungen, z.B. "gefoerdert_durch_img_id"
+- explain: relation content_podcast_TO_content_podcast
+- publication: year = datum ?
+- Sind renditions thumbnails oder Bilder mit angewendeten Effekten?
+
+==================================================
+
+
+/jobs
+
+[
+    {
+        "id": 2212, 					# page_ptr_id
+        "date": "2016-08-03",
+        "body": "\u00bbWissenschaftliche Sammlungen und Digital Humanities an der HU-Berlin: Bedarfserhebung und Weiterentwicklung des Medien-Repositoriums\u00abBesch\u00e4ftigungsstelle: Computer- und Medienservice(Jacob-und-Wilhelm-Grimm-Zentrum)Besch\u00e4ftigungszeitraum: ab sofort bis 30.06.2017Arbeitszeit: 41hVerg\u00fctung: 10,98 \u20acBeginn und Ende der Bewerbungsfrist: 29.07. bis 19.08.2016Aufgabengebiet:Du m\u00f6chtest neuen (digitalen) Glanz auf bisher unsichtbare Sch\u00e4tze legen? Dann hast Du hier Gelegenheit, Dich in den Digital Humanities weiter zu entwickeln und in einem kompetenten Team Deine F\u00e4higkeiten einzubringen!Die wissenschaftlichen Sammlungen der HU sind bedeutungsvoll als kulturelles Erbe, als Forschungsdaten und bilden einen umfangreichen Fundus f\u00fcr die Lehre. Ihre Sichtbarkeit und Nutzbarkeit in Forschung und Lehre h\u00e4ngt dabei wesentlich von ihrer digitalen Erschlie\u00dfung und der Recherchierbarkeit im Web ab. Dabei spielt die Verbindung zwischen einem physischen Sammlungsobjekt und dessen h\u00e4ufig mehrfachen und vielf\u00e4ltigen Digitalisaten (Fotografien, Videos, Scans, etc.) eine zentrale Rolle.Bisher wurde diesem Umstand nicht gen\u00fcgend Aufmerksamkeit zuteil, so dass eine Bedarfsanalyse ausgew\u00e4hlter Sammlungen erstellt wird. Darauf aufbauend ist das Medien-Repositorium der HU durch geeignete Funktionen und Schnittstellen weiterzuentwickeln, beispielsweise um Interoperabilit\u00e4t mit existierenden Systemen (\u00bbKabinette des Wissens\u00ab, u.a.).Neben den fachlichen Herausforderungen hast Du somit Gelegenheit, Deinen Horizont in den Thematiken der Sammlungsobjekte zu erweitern. Also pr\u00e4gnant zusammengefasst: Wir bieten Dir eine spannende und herausfordernde T\u00e4tigkeit im Team mit flexiblen Arbeitszeiten am Standort Mitte (Jacob-und-Wilhelm-Grimm-Zentrum).Anforderungen:Studium der Informatik, verwandter Fachrichtungen oder vergleichbare F\u00e4higkeitengute Kenntnisse oder alternativ sehr gro\u00dfe Lernbereitschaft in:Webprogrammierung (PHP, Javascript, HTML, CSS, MySQL) undMetadaten und -standards (z.B. Europeana Data Model).Interesse f\u00fcr Digital Humanities und SammlungenTeam- und Kommunikationsf\u00e4higkeit, LernbereitschaftBewerbungen sind ausschlie\u00dflich digital innerhalb der o.g. Frist unter der Angabe der o.g. Kennziffer zu richten an andreas.vollmer@cms.hu-berlin.de (Humboldt-Universit\u00e4t zu Berlin, Computer- und Medienservice, Andreas Vollmer).Es wird darum gebeten, in der Bewerbung Angaben zur sozialen Lage zu machen. Zur Sicherung der Gleichstellung sind Bewerbungen qualifizierter Frauen besonders willkommen.Schwerbehinderte Bewerber/innen werden bei gleicher Eignung bevorzugt. Bewerbungen von Menschen mit Migrationshintergrund sind ausdr\u00fccklich erw\u00fcnscht. Da keine R\u00fccksendung von Unterlagen erfolgt, wird gebeten, auf die Herreichung vonBewerbungsmappen zu verzichten und ausschlie\u00dflich Kopien vorzulegen.",
+        "main_image_id": 0,				# falsy
+        "featured": false, # optional
+        "images": [],					# image_carousel
+        "body_de": "\u00bbWissenschaftliche Sammlungen und Digital Humanities an der HU-Berlin: Bedarfserhebung und Weiterentwicklung des Medien-Repositoriums\u00abBesch\u00e4ftigungsstelle: Computer- und Medienservice(Jacob-und-Wilhelm-Grimm-Zentrum)Besch\u00e4ftigungszeitraum: ab sofort bis 30.06.2017Arbeitszeit: 41hVerg\u00fctung: 10,98 \u20acBeginn und Ende der Bewerbungsfrist: 29.07. bis 19.08.2016Aufgabengebiet:Du m\u00f6chtest neuen (digitalen) Glanz auf bisher unsichtbare Sch\u00e4tze legen? Dann hast Du hier Gelegenheit, Dich in den Digital Humanities weiter zu entwickeln und in einem kompetenten Team Deine F\u00e4higkeiten einzubringen!Die wissenschaftlichen Sammlungen der HU sind bedeutungsvoll als kulturelles Erbe, als Forschungsdaten und bilden einen umfangreichen Fundus f\u00fcr die Lehre. Ihre Sichtbarkeit und Nutzbarkeit in Forschung und Lehre h\u00e4ngt dabei wesentlich von ihrer digitalen Erschlie\u00dfung und der Recherchierbarkeit im Web ab. Dabei spielt die Verbindung zwischen einem physischen Sammlungsobjekt und dessen h\u00e4ufig mehrfachen und vielf\u00e4ltigen Digitalisaten (Fotografien, Videos, Scans, etc.) eine zentrale Rolle.Bisher wurde diesem Umstand nicht gen\u00fcgend Aufmerksamkeit zuteil, so dass eine Bedarfsanalyse ausgew\u00e4hlter Sammlungen erstellt wird. Darauf aufbauend ist das Medien-Repositorium der HU durch geeignete Funktionen und Schnittstellen weiterzuentwickeln, beispielsweise um Interoperabilit\u00e4t mit existierenden Systemen (\u00bbKabinette des Wissens\u00ab, u.a.).Neben den fachlichen Herausforderungen hast Du somit Gelegenheit, Deinen Horizont in den Thematiken der Sammlungsobjekte zu erweitern. Also pr\u00e4gnant zusammengefasst: Wir bieten Dir eine spannende und herausfordernde T\u00e4tigkeit im Team mit flexiblen Arbeitszeiten am Standort Mitte (Jacob-und-Wilhelm-Grimm-Zentrum).Anforderungen:Studium der Informatik, verwandter Fachrichtungen oder vergleichbare F\u00e4higkeitengute Kenntnisse oder alternativ sehr gro\u00dfe Lernbereitschaft in:Webprogrammierung (PHP, Javascript, HTML, CSS, MySQL) undMetadaten und -standards (z.B. Europeana Data Model).Interesse f\u00fcr Digital Humanities und SammlungenTeam- und Kommunikationsf\u00e4higkeit, LernbereitschaftBewerbungen sind ausschlie\u00dflich digital innerhalb der o.g. Frist unter der Angabe der o.g. Kennziffer zu richten an andreas.vollmer@cms.hu-berlin.de (Humboldt-Universit\u00e4t zu Berlin, Computer- und Medienservice, Andreas Vollmer).Es wird darum gebeten, in der Bewerbung Angaben zur sozialen Lage zu machen. Zur Sicherung der Gleichstellung sind Bewerbungen qualifizierter Frauen besonders willkommen.Schwerbehinderte Bewerber/innen werden bei gleicher Eignung bevorzugt. Bewerbungen von Menschen mit Migrationshintergrund sind ausdr\u00fccklich erw\u00fcnscht. Da keine R\u00fccksendung von Unterlagen erfolgt, wird gebeten, auf die Herreichung vonBewerbungsmappen zu verzichten und ausschlie\u00dflich Kopien vorzulegen.",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "studentische-hilfskrafte-kennziffer-930716",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Studentische Hilfskr\u00e4fte - Kennziffer 93/07/16",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0, # falsy, if empty
+        "active": true, # optional
+        # "urls": "",	# ???
+        "source": "content_job", # optional: db table name
+        "categories": [
+            4,
+            3
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/kooperationen
+
+[
+    {
+        "id": 123, 						# page_ptr_id
+        "date": "2016-04-28",
+        "body": "www.bam.de",
+        "main_image_id": 852,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "body_de": "www.bam.de",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "bundesanstalt-fur-materialforschung-und-prufung",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Bundesanstalt f\u00fcr Materialforschung und -pr\u00fcfung",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "",
+        "source": "content_kooperation", # optional: db table name
+        "events": [ # relation: content_kooperation_TO_public.content_event
+            162
+        ],
+        "projekte": [ # relation: content_kooperation_TO_content_projekt
+            77
+        ],
+        "categories": [ # ???
+            30,
+            34,
+            35,
+            29
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/nachwuchsfoerderungen
+
+[
+    {
+        "id": 1831, 			# page_ptr_id
+        "date": "2016-07-14",
+        "body": "Am Interdisziplin\u00e4ren Labor wurden seit 2012 insgesamt 31 Stellen f\u00fcr Postdocs geschaffen und besetzt. Aktuelle Ausschreibungen werden unter dem Men\u00fcpunkt Jobs ver\u00f6ffentlicht. ",
+        "main_image_id": 0,		# falsy
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "body_de": "Am Interdisziplin\u00e4ren Labor wurden seit 2012 insgesamt 31 Stellen f\u00fcr Postdocs geschaffen und besetzt. Aktuelle Ausschreibungen werden unter dem Men\u00fcpunkt Jobs ver\u00f6ffentlicht. ",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "stellenausschreibungen-fur-postdocs",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Stellenausschreibungen f\u00fcr Postdocs",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        "urls": "",
+        "source": "content_nachwuchsfoerderung", # optional: db table name
+        "categories": [ # ???
+            22,
+            26
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/podcasts
+
+[
+    {
+        "id": 667,		# page_ptr_id
+        "date": "2016-05-30", # optional
+        "body": "Das Projekt \u00bbMatter of Typography\u00ab veranstaltet am 9. und 10. Juni 2016 eine Konferenz zum Thema \u00bbTransformationen des Buchdrucks\u00ab.Programm und Anmeldung unter hu.berlin/buchdruckTagung des Projekts Matter of Typography in Kooperation mit derBuchdruckerei Offizin Haag-Drugulin und dem Verein f\u00fcr die Schwarze Kunst9./10. Juni 2016Der Buchdruck und seine Techniken des Stempelschneidens, Schriftgie\u00dfens und Bleisetzens haben unsere Kultur entscheidend ver\u00e4ndert \u2013 Aufkl\u00e4rung und Demokratisierung sind ohne kosteng\u00fcnstige Reproduktionen kaum vorstellbar. Doch welche Relevanz hat der Buchdruck in einer Zeit, in der mit anderen Techniken schneller, kosteng\u00fcnstiger und dabei qualitativ hochwertig gedruckt werden kann? Haben im Buchdruck hergestellte Druckerzeugnisse spezifische Charakteristika, die es rechtfertigen nicht nur die materiellen Artefakte, sondern auch das implizite Wissen des Handwerks bewahren zu wollen?Die Konferenz bringt vielf\u00e4ltige Perspektiven aus wissenschaftlichen und praktischen Bereichen zusammen. Der Buchdruck wird dabei nicht als anachronistische Kulturtechnik verstanden, die im Zuge der digitalen Revolution als \u00bbveraltet\u00ab im historischen Fundus verschwindet. Vielmehr wird der Blick auf seine Transformationen gelenkt und danach gefragt, inwiefern und weshalb die Praktiken und die \u00c4sthetik der Buchdrucktechniken bis heute die Gestaltungspraxis sowohl in analogen wie digitalen Anwendungen pr\u00e4gen.Veranstaltungsort:Exzellenzcluster Bild Wissen Gestaltung | Sophienstra\u00dfe 22a | 10117 Berlin | ZentrallaborKontakt: bwg.publicrelations@hu-berlin.de",
+        "main_image_id": 683,
+        "featured": true, # optional
+        "images": [				# image_carousel
+        	684,
+        	685,
+        	686,
+        	687,
+        	688,
+        	689
+        ],
+        "vimeo_link": "https://vimeo.com/165867058",
+        "body_de": "Das Projekt \u00bbMatter of Typography\u00ab veranstaltet am 9. und 10. Juni 2016 eine Konferenz zum Thema \u00bbTransformationen des Buchdrucks\u00ab.Programm und Anmeldung unter hu.berlin/buchdruckTagung des Projekts Matter of Typography in Kooperation mit derBuchdruckerei Offizin Haag-Drugulin und dem Verein f\u00fcr die Schwarze Kunst9./10. Juni 2016Der Buchdruck und seine Techniken des Stempelschneidens, Schriftgie\u00dfens und Bleisetzens haben unsere Kultur entscheidend ver\u00e4ndert \u2013 Aufkl\u00e4rung und Demokratisierung sind ohne kosteng\u00fcnstige Reproduktionen kaum vorstellbar. Doch welche Relevanz hat der Buchdruck in einer Zeit, in der mit anderen Techniken schneller, kosteng\u00fcnstiger und dabei qualitativ hochwertig gedruckt werden kann? Haben im Buchdruck hergestellte Druckerzeugnisse spezifische Charakteristika, die es rechtfertigen nicht nur die materiellen Artefakte, sondern auch das implizite Wissen des Handwerks bewahren zu wollen?Die Konferenz bringt vielf\u00e4ltige Perspektiven aus wissenschaftlichen und praktischen Bereichen zusammen. Der Buchdruck wird dabei nicht als anachronistische Kulturtechnik verstanden, die im Zuge der digitalen Revolution als \u00bbveraltet\u00ab im historischen Fundus verschwindet. Vielmehr wird der Blick auf seine Transformationen gelenkt und danach gefragt, inwiefern und weshalb die Praktiken und die \u00c4sthetik der Buchdrucktechniken bis heute die Gestaltungspraxis sowohl in analogen wie digitalen Anwendungen pr\u00e4gen.Veranstaltungsort:Exzellenzcluster Bild Wissen Gestaltung | Sophienstra\u00dfe 22a | 10117 Berlin | ZentrallaborKontakt: bwg.publicrelations@hu-berlin.de",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "transformationen-des-buchdrucks-im-gesprach-mit-e-schumachergebler",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Transformationen des Buchdrucks: Im Gespr\u00e4ch mit E. SchumacherGebler",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "https://hu.berlin/buchdruck https://vimeo.com/165867058 https://hu.berlin/buchdruck https://hu.berlin/buchdruck https://vimeo.com/165867058 https://hu.berlin/buchdruck",
+        "source": "content_podcast", # optional: db table name
+        "podcasts": [ # ????? # relation: content_podcast_TO_content_podcast
+            668,
+            157
+        ],
+        "events": [ # relation: content_podcast_TO_public.content_event
+            190
+        ],
+        "categories": [ # ???
+            89
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/posts
+
+[
+    {
+        "id": 1811,				# page_ptr_id
+        "date": "2001-10-20",
+        "body": "VorlesungenH. Poser, J. Renn, J. Br\u00fcning u.a.Ringvorlesung: Was ist Wissenschaftsgeschichte? Ans\u00e4tze in einem interdisziplin\u00e4ren Feld (89 018)Mo 18-20, TU, H 106KommentarT. MachoVisualisierungen der Zeit (53 295/89 001)Di 14-16, UL 6, 3059F. StreckerGeschichte der Druckgrafik in der westlichen Welt vom 15. Jahrhundert bis zur Gegenwart (89 002)Ge\u00e4ndert: Mi 14-16, UL 6, 3075W. CoyInformatik &#38; Informationsgesellschaft I: Digitale Medien (32 219/89 003)Di 15-17 und Do 15-17, RUD 25, III 4.08/DOR 24, 610 (Teleteaching an beiden Orten)Kommentar\u00dcbung zur VorlesungW. Coy, R. KubicaInformatik &#38; Informationsgesellschaft I: Digitale Medien (32 219/89 004)Do 17-19, RUD 25, III 4.08/DOR 24, 610 (Teleteaching an beiden Orten)Kommentar\u00dcbungH. BredekampEtappen der naturwissenschaftlichen Illustration (53 355/89 005)Mo 18-21, UL 6, 3071F. StreckerDruckgrafik des 15. bis 20. Jahrhunderts: \u00dcbung vor Originalen des Kupferstichkabinetts (89 006)Ge\u00e4ndert: 1. Treffen: Do. 25.10., 10-12 dann Do 14-16, KupferstichkabinettKommentarC. WeberSammlungen und Museen an deutschen Universit\u00e4ten (89 007)Mi 14-16, UL 6, 3031KommentarProseminareA. BitschHegels Ph\u00e4nomenologie des Geistes. Bild, Schrift und Zahl als Medien der Hegelschen Dialektik (53 267/89 008)Do 20-22, SO 22, 411KommentarA. FischelDruck! Gedruckte Bilder und Buchdruck in der Fr\u00fchen Neuzeit (89 009)Di 14-16, UL 6, 3031KommentarSeminareS. Dierig, C.WeberSammeln, Ordnen, Konservieren: Wissenschaftliche Sammlungen an europ\u00e4ischen Universit\u00e4ten II (89 010)Do 10-12, UL 6, 3031KommentarS. Holl/S. KhaledStadtaufzeichnung. Eine Mediengeschichte der Stadt in Renaissance und Aufkl\u00e4rungBlockseminar Zeit: 26.1.2002.- 27.1.2002 u 2.2.2002-3.2.2002, 11-16h, Einf\u00fchrungssitzung: Mo 29.10.2001KommentarHauptseminareA. BitschLinguistik, Dekonstruktion, Psychoanalyse. Zum Verh\u00e4ltnis von Schrift und Zahl im Denken der Differenz (53 273/89 012)Mo 20-22, SO 22, 411KommentarE. Cancik-KirschbaumSchrift-Bild und Text-Bild. Zum Verh\u00e4ltnis von Form und Inhalt am Beispiel von Keilschrifttexten aus dem Alten Orient (89 017)Block n.V.W. Coy, T. MachoGrenzen der Wissenschaft - von Pythagoras bis zur K\u00fcnstlichen Intelligenz (89 013)Blockseminar 2.-4.2.2002KommentarW. Coy, H. WenzelDie Enden der Gutenberg-Galaxis (52 111/89 014)Blockseminar 19.-21.20.2001KommentarF. KittlerDas Alphabet der Griechen. Von Homer bis heute.Di 14-16, Sophienstrasse 22a, Raum 411.Ch. Kassung, O. KriseleitSchriftbild - Zahl. Zur Kulturtechnik der Schrift (53 307/89 015)Do 16-18 und Mi 16-18, SO 22, 301 und DO 24, 611KommentarF. StreckerDruckgrafik im Hl. R\u00f6mischen Reich von Martin Schongauer bis Virgil Solis (89 016)Di 10-12, UL 6, 3031Kommentar",
+        "main_image_id": 0,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "body_de": "VorlesungenH. Poser, J. Renn, J. Br\u00fcning u.a.Ringvorlesung: Was ist Wissenschaftsgeschichte? Ans\u00e4tze in einem interdisziplin\u00e4ren Feld (89 018)Mo 18-20, TU, H 106KommentarT. MachoVisualisierungen der Zeit (53 295/89 001)Di 14-16, UL 6, 3059F. StreckerGeschichte der Druckgrafik in der westlichen Welt vom 15. Jahrhundert bis zur Gegenwart (89 002)Ge\u00e4ndert: Mi 14-16, UL 6, 3075W. CoyInformatik &#38; Informationsgesellschaft I: Digitale Medien (32 219/89 003)Di 15-17 und Do 15-17, RUD 25, III 4.08/DOR 24, 610 (Teleteaching an beiden Orten)Kommentar\u00dcbung zur VorlesungW. Coy, R. KubicaInformatik &#38; Informationsgesellschaft I: Digitale Medien (32 219/89 004)Do 17-19, RUD 25, III 4.08/DOR 24, 610 (Teleteaching an beiden Orten)Kommentar\u00dcbungH. BredekampEtappen der naturwissenschaftlichen Illustration (53 355/89 005)Mo 18-21, UL 6, 3071F. StreckerDruckgrafik des 15. bis 20. Jahrhunderts: \u00dcbung vor Originalen des Kupferstichkabinetts (89 006)Ge\u00e4ndert: 1. Treffen: Do. 25.10., 10-12 dann Do 14-16, KupferstichkabinettKommentarC. WeberSammlungen und Museen an deutschen Universit\u00e4ten (89 007)Mi 14-16, UL 6, 3031KommentarProseminareA. BitschHegels Ph\u00e4nomenologie des Geistes. Bild, Schrift und Zahl als Medien der Hegelschen Dialektik (53 267/89 008)Do 20-22, SO 22, 411KommentarA. FischelDruck! Gedruckte Bilder und Buchdruck in der Fr\u00fchen Neuzeit (89 009)Di 14-16, UL 6, 3031KommentarSeminareS. Dierig, C.WeberSammeln, Ordnen, Konservieren: Wissenschaftliche Sammlungen an europ\u00e4ischen Universit\u00e4ten II (89 010)Do 10-12, UL 6, 3031KommentarS. Holl/S. KhaledStadtaufzeichnung. Eine Mediengeschichte der Stadt in Renaissance und Aufkl\u00e4rungBlockseminar Zeit: 26.1.2002.- 27.1.2002 u 2.2.2002-3.2.2002, 11-16h, Einf\u00fchrungssitzung: Mo 29.10.2001KommentarHauptseminareA. BitschLinguistik, Dekonstruktion, Psychoanalyse. Zum Verh\u00e4ltnis von Schrift und Zahl im Denken der Differenz (53 273/89 012)Mo 20-22, SO 22, 411KommentarE. Cancik-KirschbaumSchrift-Bild und Text-Bild. Zum Verh\u00e4ltnis von Form und Inhalt am Beispiel von Keilschrifttexten aus dem Alten Orient (89 017)Block n.V.W. Coy, T. MachoGrenzen der Wissenschaft - von Pythagoras bis zur K\u00fcnstlichen Intelligenz (89 013)Blockseminar 2.-4.2.2002KommentarW. Coy, H. WenzelDie Enden der Gutenberg-Galaxis (52 111/89 014)Blockseminar 19.-21.20.2001KommentarF. KittlerDas Alphabet der Griechen. Von Homer bis heute.Di 14-16, Sophienstrasse 22a, Raum 411.Ch. Kassung, O. KriseleitSchriftbild - Zahl. Zur Kulturtechnik der Schrift (53 307/89 015)Do 16-18 und Mi 16-18, SO 22, 301 und DO 24, 611KommentarF. StreckerDruckgrafik im Hl. R\u00f6mischen Reich von Martin Schongauer bis Virgil Solis (89 016)Di 10-12, UL 6, 3031Kommentar",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "lehrveranstaltungen-wintersemester-200102",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Lehrveranstaltungen Wintersemester 2001/02",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        "urls": "https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89018 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89006 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89007 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89008 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89009 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89010 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89019 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89012 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89013 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89014 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89015 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89016 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89018 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89006 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89007 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89008 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89009 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89010 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89019 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89012 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89013 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89014 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89015 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89016 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89018 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89006 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89007 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89008 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89009 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89010 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89019 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89012 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89013 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89014 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89015 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89016 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89018 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89003 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89006 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89007 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89008 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89009 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89010 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89019 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89012 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89013 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89014 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89015 https://www2.hu-berlin.de/kulturtechnik/veranstaltungen.php?show=detail&#38;go=ws01#89016",
+        "source": "content_post", # optional: db table name
+        "nachwuchsfoerderung": [ # relation: content_post_TO_content_nachwuchsfoerderung
+            653
+        ],
+        "mitglieder": [ # relation: content_post_TO_public.content_mitglied
+            250,
+            226,
+            252,
+            223,
+            742,
+            1328,
+            801,
+            249
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/pressemitteilungen
+
+[
+    {
+        "id": 1463, # page_ptr_id
+        "date": "2010-07-07",
+        "body": "2010tip Berlin, 20. Mai 2010Humboldt unterwegs: Tradition und ModerneVon der tip-RedaktionOnline-Archiv des tip BerlinBerliner Zeitung, 19. Mai 2010Humboldt-Uni zieht auf Berliner Pl\u00e4tzeVon Torsten HarmsenOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 15. Mai 2010Forscher laden zum Alex und nach SteglitzVon Amory BurchardOnline-Archiv des TagesspiegelsDer Tagesspiegel, 11. April 2010Latein lernen auf dem Hermannplatz HU-VorlesungenVon Birgit G\u00fcllOnline-Archiv des Tagesspiegels2008Augsburger Allgemeine Zeitung, 17. Juni 2008Einst zog ein Riese \u00fcbers Land. Ausstellung: Flugbl\u00e4tter aus der fr\u00fchen Neuzeit in der UnibibliothekVon Sybille Schiller2007die tageszeitung, 30. Januar 2007Zeit f\u00fcr Exzellenz. Interkulturell, interdisziplin\u00e4r - so sollen die Geisteswissenschaften sein. Daf\u00fcr braucht es Freiraum. Und Spa\u00df am Abseitigen. Ein Blick in die PraxisVon Antje KorsmeierOnline-Archiv der tazFrankfurter Allgemeine Zeitung, 5. September 2007Stimmen der V\u00f6lker auf Platten. Gefangene sprechen: Eine Dokumentation zum Berliner Lautarchiv und seinen Sch\u00e4tzen Von Reinhart Meyer-Kalkus2006Frankfurter Allgemeine Zeitung, 18. Januar 2006Verstummen. Das Lautarchiv der Humboldt-Universit\u00e4t ist bedrohtVon Karen Kr\u00fcger2005Berliner Zeitung, 15. Dezember 2005Eins mit dem Kochl\u00f6ffel!Von Torsten HarmsenOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 7. Dezember 2005Kein Geld mehr f\u00fcr Kaiser, Kanzler und Kriminelle. Das Lautarchiv ist eine Tonsammlung von Sprachen, Musik sowie von Reden ber\u00fchmter Pers\u00f6nlichkeiten - jetzt soll es geschlossen werdenVon Ralf Sch\u00f6nballBerliner Zeitung, 24. Juni 2005Auf Schatzsuche mit der Maus. Ein neues Online-Portal listet s\u00e4mtliche Sammlungen an deutschen Universit\u00e4ten aufVon Sandra WirschingOnline-Archiv der Berliner ZeitungDie Zeit, 28. April 2005Die Leichen im Keller. Viele Universit\u00e4ten wissen gar nicht, welche Sch\u00e4tze ihre Archive bergen. Zwei Projekte sollen die Sammlungen vor dem Vergessen bewahrenVon Stefanie SchrammOnline-Archiv der Zeit2004Deutschlandfunk, 15. November 2004Vergessen und verschlampt. Die wissenschaftlichen Sammlungen der Universit\u00e4ts-InstituteVon Jens P. RosbachOnline-Archiv des DeutschlandfunksFrankfurter Allgemeine Zeitung, 26. August 2004Beim Alex. Humboldt als EideshelferkauS\u00fcddeutsche Zeitung, 15. Juni 2004Konkurrenz von Bild, Schrift, Zahl. Erfolg: Das Helmholtz-Zentrum f\u00fcr Kulturtechnik wird f\u00fcnf JahreVon Jens BiskyGie\u00dfener Allgemeine, 24. April 2004\u00bbDie absolute Unendlichkeit geh\u00f6rt Gott allein\u00ab. Der Schlosspark von Versailles - Eine Allegorie des Absolutismus? - Die \u00bbTugend der Endlichkeit\u00ab und Ludwig XIV. - Zu einem Berliner Forschungsprojekt Von Josef TutschFr\u00fchneuzeit-Info 1/2, 2004, S. 118-121Visuelle Argumentationen. Die Mysterien der Repr\u00e4sentation und die Berechenbarkeit der Welt. Arbeitsgespr\u00e4ch am Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik, Humboldt-Universit\u00e4t zu Berlin. Berlin, 30.-31. J\u00e4nner 2004 Von Elke WernerFrankfurter Allgemeine Zeitung, 3. Februar 2004Der Pi-Faktor. Eine Tagung \u00fcber die Argumentationskraft der BilderVon Viktoria TkaczykS\u00fcddeutsche Zeitung, 1. Februar 2004Im Bildersturm. Eine Tagung zu \u00bbvisuellen Argumentationen\u00ab in BerlinVon Arno OrzessekH-Soz-u-Kult, 30. Januar 2004Tagungsbericht: Visuelle Argumentationen. Die Mysterien der Repr\u00e4sentation und die Berechenbarkeit der WeltVon Reinhard WendlerOnline-Bericht bei H-Soz-u-Kult2003Berliner Zeitung, 9. Dezember 2003Wissenschaftsmuseum light. Moderne Science Center popularisieren nicht, sie verflachen - meint der britische Wissenschaftshistoriker Robert FoxVon Nikolaus BernauOnline-Archiv der Berliner ZeitungFrankfurter Allgemeine Zeitung, 26. November 2003Spuren der Dissimulation. Eine Tagung zu Ehren des Kunsthistorikers Martin Warnke Von Niklas MaakFrankfurter Allgemeine Zeitung, 17. September 2003Kalbsauge starrt ins Lymphgef\u00e4\u00dfsystem. Sch\u00e4tze der Wissenschaftsgeschichte: Die Sammlungen der Universit\u00e4ten wiederentdecktVon Bettina ErcheFrankfurter Allgemeine Zeitung, 23. Juli 2003Sammlungsarbeit. Helmholtz-Zentrum wirbt um Kontinuit\u00e4tcslBerliner Zeitung, 21. Juli 2003Herkulesarbeit im Archiv. Das Helmholtz-Zentrum f\u00fcr Kulturtechnik legte einen Rechenschaftsbericht vor Von Lilo BergOnline-Archiv der Berliner ZeitungBerliner Zeitung, 14./15. Juni 2003 (Beilage zur Langen Nacht der Wissenschaften)Einblicke in die Schatzkammern der Berliner Universit\u00e4tVon Bettina ErcheOnline-Archiv der Berliner Zeitung2002Frankfurter Allgemeine Zeitung, 7. Mai 2002Die totale Buchhaltung. Die Technokraten der Nazizeit als Wegbereiter: Eine Tagung \u00fcber die Bedeutung der Lochkarte f\u00fcr das globale Computerzeitalter Von Alexander KloseS\u00fcddeutsche Zeitung, 3. Mai 2002Wie man Wissen schafft. Schlendern, Schauen, Staunen oder Das Museum als Rangierbahnhof der Kommunikation - ein Workshop in BerlinVon Arno OrzessekProgramm \u00d6sterreich 1, ORF Wien, 19. Januar 2002K\u00f6rper aus Zahlen - Digitale Bildverarbeitung in der MedizinVon Thomas ThalerManuskript2001S\u00fcddeutsche Zeitung, 2. M\u00e4rz 2001R\u00fcckkehr zum Planet der Affen. Berlin als Schmelztiegel der Erkenntnis: Wie die Trennung von Natur - und Kulturwissenschaften \u00fcberwunden werden sollVon Arno OrzessekLiteraturen, Februar 2001Kein Tag ohne Pr\u00e4parat. Die Wunderkammern des Wissens an der Humboldt-Universit\u00e4tVon Michael HagnerBerliner Zeitung, 8. Januar 2001Chamissos feingliedriger Goldmohn. Vortr\u00e4ge in der \\&quot;Theatrum\\&quot;-Ausstellung der Humboldt-UniVon Sascha NicolaiOnline-Archiv der Berliner Zeitung2000Frankfurter Allgemeine Zeitung, 27. Dezember 2000Von Sachensuchern und W\u00f6rterfindern. Kinder im Theatrum Naturae et Artis: Eine NetzWerk-F\u00fchrung im Martin-Gropius-Bau Von Lothar M\u00fcllerNeues Deutschland, 18. Dezember 2000Weltkenntnis in Vitrinen. Berlins Humboldt-Universit\u00e4t \u00f6ffnet Wunderkammern des WissensVon Peter H. FeistNeue Z\u00fcrcher Zeitung, 16. Dezember 2000Wundersame Wissenschaft. Ein Theater der Natur und Kunst in Berlin Von Uwe Justus WenzelRheinischer Merkur, 15. Dezember 2000Parcours der Neugier. Statuen, Tierpr\u00e4parate, Mineralien, Ger\u00e4te - alte Forscherobjekte der Begierde laden ein zum Betrachten aus der verw\u00f6hnten Sicht von heuteVon Irmela SpelsbergDie Zeit, 14. Dezember 2000Nach der Walpurgisnacht. Sachlich, schaurig, sch\u00f6n. Die Berliner Wissenschaftssammlungen in einer spektakul\u00e4ren Ausstellung Von Gustav SeibtOnline-Archiv der ZeitFrankfurter Rundschau, 12. Dezember 2000Kopfgeburten und besessene Sch\u00e4del. \\&quot;Theatrum naturae et artis\\&quot;: Wunderkammern des Wissens im Berliner Gropius-Bau Von Martina MeisterFrankfurter Allgemeine, 11. Dezember 2000Was ist eine Dampfmaschine? Da stellen wir uns mal ganz klug. Der Modellbau ist der Anfang der Wissenschaft, die Sammlung ihr Ende: Die Humboldt-Universit\u00e4t \u00f6ffnet ihre SchatzkammernVon J\u00fcrgen KaubeFrankfurter Allgemeine (Berliner Seiten), 11. Dezember 2000SchatzgebermkS\u00fcddeutsche Zeitung, 11. Dezember 2000Diese obskuren Objekte der Begierde. Ein Theater der Natur und Kunst: Im Berliner Gropius-Bau zeigt die Humboldt-Universit\u00e4t die Wunderkammern des Wissens Von Harald EggebrechtBerliner Zeitung, 9. Dezember 2000Jetzt entdecke ich was! Ein Museum f\u00fcr Jungs und Professoren: Sammlungen der Humboldt-Universit\u00e4t im Gropius-Bau Von Jens BiskyOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 9. Dezember 2000J\u00e4ger, Sammler, Wissenschaftler. Wunderkammern der Natur - ausgestellt im Berliner Martin-Gropius-BauVon Hartmut Wewetzerdie tageszeitung, 9. Dezember 2000In der Wunderkammer des Wissens. Die morgen beginnende Ausstellung Theatrum naturae et artis im Gropius-Bau zeigt Objekte aus gro\u00dfen Sammlungen der Humboldt-Universit\u00e4t Von Philipp GesslerDie Welt, 9. Dezember 2000Zur\u00fcck zum Erbe der Wissenschaft. Die Berliner Ausstellung Theatrum naturae et artis pr\u00e4sentiert die Sch\u00e4tze der Humboldt-Universit\u00e4t und l\u00e4utet das Ende der inszenierten Gro\u00dfausstellungen ein Von Matthias KamannBerliner Morgenpost, 9. Dezember 2000Angenehm leer. Und trotzdem voller \u00dcberraschungen: Die Humboldt-Universit\u00e4t \u00f6ffnet im Gropius-Bau ihre Wunderkammern des Wissens: Griechische Skulpturen stehen neben dem anatomischen Lehrmodell und dem Skelett eine \\&quot;Langen Kerls\\&quot;Von Anke-Sophie MeyerFrankfurter Allgemeine Zeitung, 28. Juni 2000Im Kulturalienkabinett. In Berlin wurde das Helmholtz-Zentrum f\u00fcr Kulturtechnik er\u00f6ffnet Von J\u00fcrgen KaubeBerliner Zeitung, 23. Juni 2000An der Grenze. Das Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik wurde er\u00f6ffnet Von Jens BiskyOnline-Archiv der Berliner Zeitungdie tageszeitung, 23. Juni 2000Helmholtz-Zentrum. Brahms vs. MP3WBGBerliner Morgenpost, 23. Juni 2000An der Schnittstelle von Natur- und Geisteswissenschaften Von Horst ChristiansHumboldt, 20. Juli 2000Helmholtz zu Ehren. Am 21. Juni 2000 wurde das interdisziplin\u00e4re Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik feierlich er\u00f6ffnet Von Christian GehlhaarBerliner Zeitung, 11. Mai 2000Archiv des vermessenen Menschen. Ringvorlesung an der HU: Bewahren und VermittelnVon Kai MichaelBerliner Zeitung, 19. Januar 2000Auf Edison-Phonographen gerettet. Bewahren und Sammeln: Historische Tondokumente im Phonogrammarchiv und LautarchivVon Meret ForsterOnline-Archiv der ZeitBerliner \u00c4rzte, Januar 2000Die verborgenen Sch\u00e4tze der Humboldt-Universit\u00e4tVon Rosemarie Stein1999Der Tagesspiegel, 20. Oktober 1999Historische Sammlungen werden vernetzt. Das Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik er\u00f6ffnet f\u00fcr die Forscher neue WegeVon Nicholas K\u00f6rberBerliner Morgenpost, 18. September 1999Mathematiker auf Schatzsuche. Das neue \\&quot;Helmholtz-Zentrum f\u00fcr Kulturtechnik\\&quot; an der HUVon Horst ChristiansUnAufgefordert, Juli 1999Satzung folgt sp\u00e4ter. Jochen Br\u00fcning und Horst Bredekamp gr\u00fcnden ein Zentrum f\u00fcr KulturtechnikjotBerliner Zeitung, 22. Juni 1999Ausgestorbene Sprachen, auf Schellack gepre\u00dft. Die Humboldt-Universit\u00e4t l\u00e4\u00dft ihr 8000 Beispiele umfassenden Lautarchiv digitalisierenVon Susanne BalthasarOnline-Archiv der Berliner ZeitungRadio Kultur, SFB, 22. Juni 1999Das Lautarchiv der Humboldt-Universit\u00e4tVon Josefine JanertDie Zeit, 12. Mai 1999Die Humboldts kommen! Berlins erste Universit\u00e4t entdeckt die Vergangenheit f\u00fcr ein ZukunftsprojektVon Petra KipphoffOnline-Archiv der ZeitBerliner Zeitung, 12. Mai 1999Erstarrtes Leben. In einem Berliner B\u00fcroschrank schlummern Reste einer einst gro\u00dfen Wachsmodell-SammlungVon Bernd Pl\u00fcmperOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 11. Mai 1999\\&quot;Computer sind Informationsvernichter\\&quot;. An der Humboldt-Universit\u00e4t entsteht ein Zentrum f\u00fcr Kulturtechnik Von Tom HeithoffDer Tagesspiegel, 11. Mai 1999Bobo und Soso von der Schellackplatte. Campus-Entdeckungen: Im Lautarchiv der Humboldt-Universit\u00e4t lagern exotische Tonaufnahmen aus der VergangenheitVon Josefine JanertBerliner Zeitung, 11. Mai 1999Im Auge des Geistes. Ein Symposium des noch nicht gegr\u00fcndeten Zentrums f\u00fcr KulturtechnikVon Jens BiskyOnline-Archiv der Berliner ZeitungHumboldt-Zeitung, 21. Januar 1999Die Sammlungen der Universit\u00e4tHumboldt-Zeitung, 21. Januar 1999Die \\&quot;Platten-Sammlung\\&quot;Von Katrin Seidel1998UnAufgefordert, Dezember 1998Virtuelles Musuem. Die Sammlungen der Universit\u00e4t werden multimedial zug\u00e4ngig gemachtbajagDer Tagesspiegel, 27. November 1998Zwischen Olymp und Hades. Wie macht man universit\u00e4re Traditionen, und wer sucht die besten Gelehrten aus? Votrag an der HUVon Ingo BachBerliner Morgenpost, 31. Oktober 1998Antike Helden stehen Schlange. Datenbank f\u00fcr die HU-Sammlungen in PlanungVon Andreas VuckovicDer Tagesspiegel, 30. Oktober 1998Die 99 Sch\u00e4tze der Humboldt-Universit\u00e4t. Hochschuleigene Sammlungen werden erschlossenVon Rosemarie SteinBerliner Zeitung, 27. Oktober 1998Ein Experte f\u00fcrs Schuhwerk von Tieren. Siegfried Schendel hat jahrzehntelang die Hipposandalen-Sammlung der Humboldt-Universit\u00e4t betreutOnline-Archiv der Berliner Zeitung1997WDR-Fernsehen, 20. Mai 1997Fundst\u00fccke. Ein Adonis aus Gips und ein Zwitter im Glas. Die Sammlungen der Humboldt-Universit\u00e4tVon Edith GerhardsFrankfurter Allgemeine Zeitung, 8. M\u00e4rz 1997Bei Humboldts unterm Teppich. Die Berliner Universit\u00e4t entdeckt ihre Sch\u00e4tzeVon Heinrich Wefing",
+        "main_image_id": 0,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "body_de": "2010tip Berlin, 20. Mai 2010Humboldt unterwegs: Tradition und ModerneVon der tip-RedaktionOnline-Archiv des tip BerlinBerliner Zeitung, 19. Mai 2010Humboldt-Uni zieht auf Berliner Pl\u00e4tzeVon Torsten HarmsenOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 15. Mai 2010Forscher laden zum Alex und nach SteglitzVon Amory BurchardOnline-Archiv des TagesspiegelsDer Tagesspiegel, 11. April 2010Latein lernen auf dem Hermannplatz HU-VorlesungenVon Birgit G\u00fcllOnline-Archiv des Tagesspiegels2008Augsburger Allgemeine Zeitung, 17. Juni 2008Einst zog ein Riese \u00fcbers Land. Ausstellung: Flugbl\u00e4tter aus der fr\u00fchen Neuzeit in der UnibibliothekVon Sybille Schiller2007die tageszeitung, 30. Januar 2007Zeit f\u00fcr Exzellenz. Interkulturell, interdisziplin\u00e4r - so sollen die Geisteswissenschaften sein. Daf\u00fcr braucht es Freiraum. Und Spa\u00df am Abseitigen. Ein Blick in die PraxisVon Antje KorsmeierOnline-Archiv der tazFrankfurter Allgemeine Zeitung, 5. September 2007Stimmen der V\u00f6lker auf Platten. Gefangene sprechen: Eine Dokumentation zum Berliner Lautarchiv und seinen Sch\u00e4tzen Von Reinhart Meyer-Kalkus2006Frankfurter Allgemeine Zeitung, 18. Januar 2006Verstummen. Das Lautarchiv der Humboldt-Universit\u00e4t ist bedrohtVon Karen Kr\u00fcger2005Berliner Zeitung, 15. Dezember 2005Eins mit dem Kochl\u00f6ffel!Von Torsten HarmsenOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 7. Dezember 2005Kein Geld mehr f\u00fcr Kaiser, Kanzler und Kriminelle. Das Lautarchiv ist eine Tonsammlung von Sprachen, Musik sowie von Reden ber\u00fchmter Pers\u00f6nlichkeiten - jetzt soll es geschlossen werdenVon Ralf Sch\u00f6nballBerliner Zeitung, 24. Juni 2005Auf Schatzsuche mit der Maus. Ein neues Online-Portal listet s\u00e4mtliche Sammlungen an deutschen Universit\u00e4ten aufVon Sandra WirschingOnline-Archiv der Berliner ZeitungDie Zeit, 28. April 2005Die Leichen im Keller. Viele Universit\u00e4ten wissen gar nicht, welche Sch\u00e4tze ihre Archive bergen. Zwei Projekte sollen die Sammlungen vor dem Vergessen bewahrenVon Stefanie SchrammOnline-Archiv der Zeit2004Deutschlandfunk, 15. November 2004Vergessen und verschlampt. Die wissenschaftlichen Sammlungen der Universit\u00e4ts-InstituteVon Jens P. RosbachOnline-Archiv des DeutschlandfunksFrankfurter Allgemeine Zeitung, 26. August 2004Beim Alex. Humboldt als EideshelferkauS\u00fcddeutsche Zeitung, 15. Juni 2004Konkurrenz von Bild, Schrift, Zahl. Erfolg: Das Helmholtz-Zentrum f\u00fcr Kulturtechnik wird f\u00fcnf JahreVon Jens BiskyGie\u00dfener Allgemeine, 24. April 2004\u00bbDie absolute Unendlichkeit geh\u00f6rt Gott allein\u00ab. Der Schlosspark von Versailles - Eine Allegorie des Absolutismus? - Die \u00bbTugend der Endlichkeit\u00ab und Ludwig XIV. - Zu einem Berliner Forschungsprojekt Von Josef TutschFr\u00fchneuzeit-Info 1/2, 2004, S. 118-121Visuelle Argumentationen. Die Mysterien der Repr\u00e4sentation und die Berechenbarkeit der Welt. Arbeitsgespr\u00e4ch am Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik, Humboldt-Universit\u00e4t zu Berlin. Berlin, 30.-31. J\u00e4nner 2004 Von Elke WernerFrankfurter Allgemeine Zeitung, 3. Februar 2004Der Pi-Faktor. Eine Tagung \u00fcber die Argumentationskraft der BilderVon Viktoria TkaczykS\u00fcddeutsche Zeitung, 1. Februar 2004Im Bildersturm. Eine Tagung zu \u00bbvisuellen Argumentationen\u00ab in BerlinVon Arno OrzessekH-Soz-u-Kult, 30. Januar 2004Tagungsbericht: Visuelle Argumentationen. Die Mysterien der Repr\u00e4sentation und die Berechenbarkeit der WeltVon Reinhard WendlerOnline-Bericht bei H-Soz-u-Kult2003Berliner Zeitung, 9. Dezember 2003Wissenschaftsmuseum light. Moderne Science Center popularisieren nicht, sie verflachen - meint der britische Wissenschaftshistoriker Robert FoxVon Nikolaus BernauOnline-Archiv der Berliner ZeitungFrankfurter Allgemeine Zeitung, 26. November 2003Spuren der Dissimulation. Eine Tagung zu Ehren des Kunsthistorikers Martin Warnke Von Niklas MaakFrankfurter Allgemeine Zeitung, 17. September 2003Kalbsauge starrt ins Lymphgef\u00e4\u00dfsystem. Sch\u00e4tze der Wissenschaftsgeschichte: Die Sammlungen der Universit\u00e4ten wiederentdecktVon Bettina ErcheFrankfurter Allgemeine Zeitung, 23. Juli 2003Sammlungsarbeit. Helmholtz-Zentrum wirbt um Kontinuit\u00e4tcslBerliner Zeitung, 21. Juli 2003Herkulesarbeit im Archiv. Das Helmholtz-Zentrum f\u00fcr Kulturtechnik legte einen Rechenschaftsbericht vor Von Lilo BergOnline-Archiv der Berliner ZeitungBerliner Zeitung, 14./15. Juni 2003 (Beilage zur Langen Nacht der Wissenschaften)Einblicke in die Schatzkammern der Berliner Universit\u00e4tVon Bettina ErcheOnline-Archiv der Berliner Zeitung2002Frankfurter Allgemeine Zeitung, 7. Mai 2002Die totale Buchhaltung. Die Technokraten der Nazizeit als Wegbereiter: Eine Tagung \u00fcber die Bedeutung der Lochkarte f\u00fcr das globale Computerzeitalter Von Alexander KloseS\u00fcddeutsche Zeitung, 3. Mai 2002Wie man Wissen schafft. Schlendern, Schauen, Staunen oder Das Museum als Rangierbahnhof der Kommunikation - ein Workshop in BerlinVon Arno OrzessekProgramm \u00d6sterreich 1, ORF Wien, 19. Januar 2002K\u00f6rper aus Zahlen - Digitale Bildverarbeitung in der MedizinVon Thomas ThalerManuskript2001S\u00fcddeutsche Zeitung, 2. M\u00e4rz 2001R\u00fcckkehr zum Planet der Affen. Berlin als Schmelztiegel der Erkenntnis: Wie die Trennung von Natur - und Kulturwissenschaften \u00fcberwunden werden sollVon Arno OrzessekLiteraturen, Februar 2001Kein Tag ohne Pr\u00e4parat. Die Wunderkammern des Wissens an der Humboldt-Universit\u00e4tVon Michael HagnerBerliner Zeitung, 8. Januar 2001Chamissos feingliedriger Goldmohn. Vortr\u00e4ge in der \\&quot;Theatrum\\&quot;-Ausstellung der Humboldt-UniVon Sascha NicolaiOnline-Archiv der Berliner Zeitung2000Frankfurter Allgemeine Zeitung, 27. Dezember 2000Von Sachensuchern und W\u00f6rterfindern. Kinder im Theatrum Naturae et Artis: Eine NetzWerk-F\u00fchrung im Martin-Gropius-Bau Von Lothar M\u00fcllerNeues Deutschland, 18. Dezember 2000Weltkenntnis in Vitrinen. Berlins Humboldt-Universit\u00e4t \u00f6ffnet Wunderkammern des WissensVon Peter H. FeistNeue Z\u00fcrcher Zeitung, 16. Dezember 2000Wundersame Wissenschaft. Ein Theater der Natur und Kunst in Berlin Von Uwe Justus WenzelRheinischer Merkur, 15. Dezember 2000Parcours der Neugier. Statuen, Tierpr\u00e4parate, Mineralien, Ger\u00e4te - alte Forscherobjekte der Begierde laden ein zum Betrachten aus der verw\u00f6hnten Sicht von heuteVon Irmela SpelsbergDie Zeit, 14. Dezember 2000Nach der Walpurgisnacht. Sachlich, schaurig, sch\u00f6n. Die Berliner Wissenschaftssammlungen in einer spektakul\u00e4ren Ausstellung Von Gustav SeibtOnline-Archiv der ZeitFrankfurter Rundschau, 12. Dezember 2000Kopfgeburten und besessene Sch\u00e4del. \\&quot;Theatrum naturae et artis\\&quot;: Wunderkammern des Wissens im Berliner Gropius-Bau Von Martina MeisterFrankfurter Allgemeine, 11. Dezember 2000Was ist eine Dampfmaschine? Da stellen wir uns mal ganz klug. Der Modellbau ist der Anfang der Wissenschaft, die Sammlung ihr Ende: Die Humboldt-Universit\u00e4t \u00f6ffnet ihre SchatzkammernVon J\u00fcrgen KaubeFrankfurter Allgemeine (Berliner Seiten), 11. Dezember 2000SchatzgebermkS\u00fcddeutsche Zeitung, 11. Dezember 2000Diese obskuren Objekte der Begierde. Ein Theater der Natur und Kunst: Im Berliner Gropius-Bau zeigt die Humboldt-Universit\u00e4t die Wunderkammern des Wissens Von Harald EggebrechtBerliner Zeitung, 9. Dezember 2000Jetzt entdecke ich was! Ein Museum f\u00fcr Jungs und Professoren: Sammlungen der Humboldt-Universit\u00e4t im Gropius-Bau Von Jens BiskyOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 9. Dezember 2000J\u00e4ger, Sammler, Wissenschaftler. Wunderkammern der Natur - ausgestellt im Berliner Martin-Gropius-BauVon Hartmut Wewetzerdie tageszeitung, 9. Dezember 2000In der Wunderkammer des Wissens. Die morgen beginnende Ausstellung Theatrum naturae et artis im Gropius-Bau zeigt Objekte aus gro\u00dfen Sammlungen der Humboldt-Universit\u00e4t Von Philipp GesslerDie Welt, 9. Dezember 2000Zur\u00fcck zum Erbe der Wissenschaft. Die Berliner Ausstellung Theatrum naturae et artis pr\u00e4sentiert die Sch\u00e4tze der Humboldt-Universit\u00e4t und l\u00e4utet das Ende der inszenierten Gro\u00dfausstellungen ein Von Matthias KamannBerliner Morgenpost, 9. Dezember 2000Angenehm leer. Und trotzdem voller \u00dcberraschungen: Die Humboldt-Universit\u00e4t \u00f6ffnet im Gropius-Bau ihre Wunderkammern des Wissens: Griechische Skulpturen stehen neben dem anatomischen Lehrmodell und dem Skelett eine \\&quot;Langen Kerls\\&quot;Von Anke-Sophie MeyerFrankfurter Allgemeine Zeitung, 28. Juni 2000Im Kulturalienkabinett. In Berlin wurde das Helmholtz-Zentrum f\u00fcr Kulturtechnik er\u00f6ffnet Von J\u00fcrgen KaubeBerliner Zeitung, 23. Juni 2000An der Grenze. Das Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik wurde er\u00f6ffnet Von Jens BiskyOnline-Archiv der Berliner Zeitungdie tageszeitung, 23. Juni 2000Helmholtz-Zentrum. Brahms vs. MP3WBGBerliner Morgenpost, 23. Juni 2000An der Schnittstelle von Natur- und Geisteswissenschaften Von Horst ChristiansHumboldt, 20. Juli 2000Helmholtz zu Ehren. Am 21. Juni 2000 wurde das interdisziplin\u00e4re Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik feierlich er\u00f6ffnet Von Christian GehlhaarBerliner Zeitung, 11. Mai 2000Archiv des vermessenen Menschen. Ringvorlesung an der HU: Bewahren und VermittelnVon Kai MichaelBerliner Zeitung, 19. Januar 2000Auf Edison-Phonographen gerettet. Bewahren und Sammeln: Historische Tondokumente im Phonogrammarchiv und LautarchivVon Meret ForsterOnline-Archiv der ZeitBerliner \u00c4rzte, Januar 2000Die verborgenen Sch\u00e4tze der Humboldt-Universit\u00e4tVon Rosemarie Stein1999Der Tagesspiegel, 20. Oktober 1999Historische Sammlungen werden vernetzt. Das Hermann von Helmholtz-Zentrum f\u00fcr Kulturtechnik er\u00f6ffnet f\u00fcr die Forscher neue WegeVon Nicholas K\u00f6rberBerliner Morgenpost, 18. September 1999Mathematiker auf Schatzsuche. Das neue \\&quot;Helmholtz-Zentrum f\u00fcr Kulturtechnik\\&quot; an der HUVon Horst ChristiansUnAufgefordert, Juli 1999Satzung folgt sp\u00e4ter. Jochen Br\u00fcning und Horst Bredekamp gr\u00fcnden ein Zentrum f\u00fcr KulturtechnikjotBerliner Zeitung, 22. Juni 1999Ausgestorbene Sprachen, auf Schellack gepre\u00dft. Die Humboldt-Universit\u00e4t l\u00e4\u00dft ihr 8000 Beispiele umfassenden Lautarchiv digitalisierenVon Susanne BalthasarOnline-Archiv der Berliner ZeitungRadio Kultur, SFB, 22. Juni 1999Das Lautarchiv der Humboldt-Universit\u00e4tVon Josefine JanertDie Zeit, 12. Mai 1999Die Humboldts kommen! Berlins erste Universit\u00e4t entdeckt die Vergangenheit f\u00fcr ein ZukunftsprojektVon Petra KipphoffOnline-Archiv der ZeitBerliner Zeitung, 12. Mai 1999Erstarrtes Leben. In einem Berliner B\u00fcroschrank schlummern Reste einer einst gro\u00dfen Wachsmodell-SammlungVon Bernd Pl\u00fcmperOnline-Archiv der Berliner ZeitungDer Tagesspiegel, 11. Mai 1999\\&quot;Computer sind Informationsvernichter\\&quot;. An der Humboldt-Universit\u00e4t entsteht ein Zentrum f\u00fcr Kulturtechnik Von Tom HeithoffDer Tagesspiegel, 11. Mai 1999Bobo und Soso von der Schellackplatte. Campus-Entdeckungen: Im Lautarchiv der Humboldt-Universit\u00e4t lagern exotische Tonaufnahmen aus der VergangenheitVon Josefine JanertBerliner Zeitung, 11. Mai 1999Im Auge des Geistes. Ein Symposium des noch nicht gegr\u00fcndeten Zentrums f\u00fcr KulturtechnikVon Jens BiskyOnline-Archiv der Berliner ZeitungHumboldt-Zeitung, 21. Januar 1999Die Sammlungen der Universit\u00e4tHumboldt-Zeitung, 21. Januar 1999Die \\&quot;Platten-Sammlung\\&quot;Von Katrin Seidel1998UnAufgefordert, Dezember 1998Virtuelles Musuem. Die Sammlungen der Universit\u00e4t werden multimedial zug\u00e4ngig gemachtbajagDer Tagesspiegel, 27. November 1998Zwischen Olymp und Hades. Wie macht man universit\u00e4re Traditionen, und wer sucht die besten Gelehrten aus? Votrag an der HUVon Ingo BachBerliner Morgenpost, 31. Oktober 1998Antike Helden stehen Schlange. Datenbank f\u00fcr die HU-Sammlungen in PlanungVon Andreas VuckovicDer Tagesspiegel, 30. Oktober 1998Die 99 Sch\u00e4tze der Humboldt-Universit\u00e4t. Hochschuleigene Sammlungen werden erschlossenVon Rosemarie SteinBerliner Zeitung, 27. Oktober 1998Ein Experte f\u00fcrs Schuhwerk von Tieren. Siegfried Schendel hat jahrzehntelang die Hipposandalen-Sammlung der Humboldt-Universit\u00e4t betreutOnline-Archiv der Berliner Zeitung1997WDR-Fernsehen, 20. Mai 1997Fundst\u00fccke. Ein Adonis aus Gips und ein Zwitter im Glas. Die Sammlungen der Humboldt-Universit\u00e4tVon Edith GerhardsFrankfurter Allgemeine Zeitung, 8. M\u00e4rz 1997Bei Humboldts unterm Teppich. Die Berliner Universit\u00e4t entdeckt ihre Sch\u00e4tzeVon Heinrich Wefing",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "pressespiegel-helmholtz-zentrum-fur-kulturtechnik_2",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Pressespiegel Helmholtz-Zentrum f\u00fcr Kulturtechnik",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "http://www.tip-berlin.de/kultur-und-freizeit-stadtleben-und-leute-locations-az/humboldt-unterwegs-tradition-und-moderne http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2010/0519/berlin/0121/index.html http://www.tagesspiegel.de/berlin/stadtleben/forscher-laden-zum-alex-und-nach-steglitz/1838708.html http://www.tagesspiegel.de/zeitung/latein-lernen-auf-dem-hermannplatz-hu-vorlesungen/1785646.html http://www.taz.de/index.php?id=archivseite&#38;dig=2007/01/30/a0178 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/1215/feuilleton/0054/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/0624/wissenschaft/0002/index.html http://www.zeit.de/2005/18/Sammlungen_Universit_8at http://www.dradio.de/dlf/sendungen/campus/321565/ http://hsozkult.geschichte.hu-berlin.de/tagungsberichte/id=401 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/1209/wissenschaft/0003/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0721/wissenschaft/0042/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0614/none/0115/index.html http://matrix.orf.at/bkframe/030119_1.htm http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2001/0108/none/0030/index.html http://www.zeit.de/2000/51/200051_theatrum.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/1209/none/0011/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0623/none/0006/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0119/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0622/none/0067/index.html http://www.zeit.de/1999/20/199920.humboldt_1_.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0512/none/0010/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0511/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1998/1027/none/0042/index.html http://www.tip-berlin.de/kultur-und-freizeit-stadtleben-und-leute-locations-az/humboldt-unterwegs-tradition-und-moderne http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2010/0519/berlin/0121/index.html http://www.tagesspiegel.de/berlin/stadtleben/forscher-laden-zum-alex-und-nach-steglitz/1838708.html http://www.tagesspiegel.de/zeitung/latein-lernen-auf-dem-hermannplatz-hu-vorlesungen/1785646.html http://www.taz.de/index.php?id=archivseite&#38;dig=2007/01/30/a0178 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/1215/feuilleton/0054/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/0624/wissenschaft/0002/index.html http://www.zeit.de/2005/18/Sammlungen_Universit_8at http://www.dradio.de/dlf/sendungen/campus/321565/ http://hsozkult.geschichte.hu-berlin.de/tagungsberichte/id=401 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/1209/wissenschaft/0003/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0721/wissenschaft/0042/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0614/none/0115/index.html http://matrix.orf.at/bkframe/030119_1.htm http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2001/0108/none/0030/index.html http://www.zeit.de/2000/51/200051_theatrum.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/1209/none/0011/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0623/none/0006/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0119/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0622/none/0067/index.html http://www.zeit.de/1999/20/199920.humboldt_1_.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0512/none/0010/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0511/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1998/1027/none/0042/index.html http://www.tip-berlin.de/kultur-und-freizeit-stadtleben-und-leute-locations-az/humboldt-unterwegs-tradition-und-moderne http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2010/0519/berlin/0121/index.html http://www.tagesspiegel.de/berlin/stadtleben/forscher-laden-zum-alex-und-nach-steglitz/1838708.html http://www.tagesspiegel.de/zeitung/latein-lernen-auf-dem-hermannplatz-hu-vorlesungen/1785646.html http://www.taz.de/index.php?id=archivseite&#38;dig=2007/01/30/a0178 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/1215/feuilleton/0054/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/0624/wissenschaft/0002/index.html http://www.zeit.de/2005/18/Sammlungen_Universit_8at http://www.dradio.de/dlf/sendungen/campus/321565/ http://hsozkult.geschichte.hu-berlin.de/tagungsberichte/id=401 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/1209/wissenschaft/0003/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0721/wissenschaft/0042/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0614/none/0115/index.html http://matrix.orf.at/bkframe/030119_1.htm http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2001/0108/none/0030/index.html http://www.zeit.de/2000/51/200051_theatrum.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/1209/none/0011/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0623/none/0006/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0119/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0622/none/0067/index.html http://www.zeit.de/1999/20/199920.humboldt_1_.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0512/none/0010/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0511/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1998/1027/none/0042/index.html http://www.tip-berlin.de/kultur-und-freizeit-stadtleben-und-leute-locations-az/humboldt-unterwegs-tradition-und-moderne http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2010/0519/berlin/0121/index.html http://www.tagesspiegel.de/berlin/stadtleben/forscher-laden-zum-alex-und-nach-steglitz/1838708.html http://www.tagesspiegel.de/zeitung/latein-lernen-auf-dem-hermannplatz-hu-vorlesungen/1785646.html http://www.taz.de/index.php?id=archivseite&#38;dig=2007/01/30/a0178 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/1215/feuilleton/0054/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2005/0624/wissenschaft/0002/index.html http://www.zeit.de/2005/18/Sammlungen_Universit_8at http://www.dradio.de/dlf/sendungen/campus/321565/ http://hsozkult.geschichte.hu-berlin.de/tagungsberichte/id=401 http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/1209/wissenschaft/0003/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0721/wissenschaft/0042/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2003/0614/none/0115/index.html http://matrix.orf.at/bkframe/030119_1.htm http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2001/0108/none/0030/index.html http://www.zeit.de/2000/51/200051_theatrum.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/1209/none/0011/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0623/none/0006/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2000/0119/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0622/none/0067/index.html http://www.zeit.de/1999/20/199920.humboldt_1_.xml http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0512/none/0010/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1999/0511/none/0016/index.html http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/1998/1027/none/0042/index.html",
+        "source": "content_pressemitteilung", # optional: db table name
+        "categories": [ # ???
+            92,
+            91
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/projekte
+
+[
+    {
+        "id": 66,			# page_ptr_id
+        "date": "2016-04-20", # optional
+        "body": "Projekt in Kooperation mit dem Museum f\u00fcr Naturkunde - Leibniz-Institut f\u00fcr Evolutions- und Biodiversit\u00e4tsforschung, dem Kunstgewerbemusuem der Staatlichen Museen zu Berlin und der Kunstbibliothek der Staatlichen Museen zu Berlin. ForschungsthemaMit einem metadisziplin\u00e4ren Blick auf die Strategien formbasierter Klassifikation und Systematisierung wird anhand einer biologischen Sammlung von Krebstieren untersucht, welche \u00bbMerkmale\u00ab so auff\u00e4llig im Sinne der Aufmerksamkeitssteuerung sind, dass sie eine Theoriebildung ansto\u00dfen.Auf Basis einer biologischen Sammlung von Krebstieren (\u00bbKrabben-Projekt\u00ab) soll eine Revision der Systematisierungskultur in der Biologie hinsichtlich des Spannungsverh\u00e4ltnisses von Typologie und Genealogie vorgenommen werden. Form wird dabei als Grundlage der Klassifikation und Gruppenbildung und damit als Unterscheidungsressource untersucht, die je nach Disziplin unterschiedlich genutzt wird.Neben einer disziplin\u00fcbergreifenden Kritik von Form und Formwahrnehmung liegen Untersuchungen zur Theorie von Klassifikation und Gruppenbildung, zu den Begriffen \u00bbMerkmal\u00ab und \u00bbDetail\u00ab, der naturwissenschaftlichen Beobachtungsmethoden und zur Psychologie der Wahrnehmung und Aufmerksamkeit vor. Jedoch wird mit der praxisbezogenen Evaluation eines zentralen methodischen Instrumentariums in der vorgeschlagenen Konstellation Neuland betreten. Signifikant sind dabei die Medien der Beobachtung und Aufzeichnung.ZielsetzungZiel ist ein metadisziplin\u00e4rer Blick auf die Strategien formbasierter Klassifikation und Systematisierung. Es soll erforscht werden, welche \u00bbMerkmale\u00ab so auff\u00e4llig im Sinne der Aufmerksamkeitssteuerung sind, dass sie eine Theoriebildung ansto\u00dfen. Damit soll n\u00e4her definiert werden, was insgesamt aus einer Form abgeleitet werden kann und unter welchen Bedingungen und mit welchen Mitteln (auch im Sinne konkreter technischer Medien) dies geschieht. Was steuert Aufmerksamkeit, wenn Form in einer diskreten Datenwelt als Gr\u00f6\u00dfe keine Rolle mehr spielen sollte? Wie kann die Beziehung von Betrachter und Betrachtetem reflektiert werden, und wie lassen sich die hier erbrachten Erkenntnisse auf andere wissenschaftliche und kreative Disziplinen und ihre Sehweisen \u00fcbertragen? Die vergleichende Analyse soll au\u00dferdem verdeutlichen, dass kulturelle Faktoren und Medien (Geschmacks- und Stilbildung, \u00dcberlieferung, \u00f6konomische Bewertung) die Erforschung von Naturobjekten nicht nur (st\u00f6rend) beeinflussen, sondern im naturwissenschaftlichen Kontext auch produktiv werden k\u00f6nnen.Durchf\u00fchrungEin einf\u00fchrender Workshop wird zur interdisziplin\u00e4ren Methodik und zum bild- und kulturwissenschaftlichen \u00dcbertrag veranstaltet.Eine Beobachtungsebene soll eingesetzt werden, welche die natur- und kulturwissenschaftlichen Analysen gegen\u00fcberstellt und dokumentiert. Hierzu bedarf es der Mitarbeit der Psychologie, Ethnologie und der Expertise der Designgeschichte (Psychologie der Aufmerksamkeit; Reflexivit\u00e4t der Designgeschichte).Es erfolgt die Sichtung und Auswahl kontextrelevanter zoologischer Objekte f\u00fcr eine vergleichende Analyse im Rahmen von Publikationen und Ausstellungen sowie das Sammeln und Bearbeiten zoologischer Objekte. Anschlie\u00dfend wird eine Matrix f\u00fcr die vergleichende Analyse von Merkmalen, Eigenschaften und Aspekten und die weiterf\u00fchrende Recherche hergestellt.Die Recherche von naturwissenschaftlichen Medien (Pr\u00e4parate, Fotografien, Film u.a.) erfolgt in Best\u00e4nden der HU und des Museums f\u00fcr Naturkunde Berlin, die von kunst- und kulturhistorischen Objekten in Best\u00e4nden des Kunstgewerbemuseums und der Kunstbibliothek.Die methodologische Untersuchung wird um eine gemeinsame Arbeitsebene mit den Akteuren des Projekts Sammlungserschlie\u00dfung erweitert, da die Konfrontation mit ungeordneten oder anonymen Sammlungsobjekten in besonderer Weise Aufschluss \u00fcber kulturelle, kognitive und professionelle Mechanismen der Begriffsbildung gibt. Enge Verbindung besteht auch zum Projekt Genese &#38; Genealogie, wo Aspekte von Formbildung und -wandel analysiert werden. Im Projekt Attention &#38; Form allerdings steht die \u00c4nderung der Morphologie in der Zeit selbst, sowie deren Bewertung durch den Betrachter im Mittelpunkt.Die vergleichende Analyse und Synthese zoologischer Gestalten beinhaltet zugleich eine Hypothese \u00fcber die Transformation organismischer Strukturen und Formen und schl\u00e4gt damit eine Br\u00fccke zur Gestaltung.ErgebnissicherungDie Arbeit des Projektes soll durch (interdisziplin\u00e4re) Fachpublikationen begleitet werden. Die Ergebnisse des Projektes sind zudem Gegenstand eines experimentellen Ausstellungsprojektes unter dem Arbeitstitel \u00bbNatur als Kunst\u00ab (zur Analyse naturwissenschaftlicher Forschungsobjekte mit kunstwissenschaftlicher Methodik), als Teil einer Ausstellung zum Thema \u00bbForm und Strukturen in Natur und Design\u00ab, die zusammen mit dem Projekt \u00bbGenese &#38; Genealogie\u00ab im Museum f\u00fcr Kunstgewerbe pr\u00e4sentiert werden soll.In der Ausstellung sollen Objekte der Zoologischen Sammlung und von anderen Sammlungsteilen der HU sowie des Museums f\u00fcr Naturkunde mit Designobjekten, druckgrafischen Arbeiten, Skulpturen und anderen Exponaten aus Best\u00e4nden der Staatlichen Museen Berlin konfrontiert werden. Ein Webauftritt, welcher Aspekte der Ausstellung aufgreift und zu Lehrzwecken weiterf\u00fchrt, soll interdisziplin\u00e4re Vorarbeiten (Online-Lehrplattform zur Morphologie PIXTURA) weiterf\u00fchren.",
+        "main_image_id": 47,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "body_de": "Projekt in Kooperation mit dem Museum f\u00fcr Naturkunde - Leibniz-Institut f\u00fcr Evolutions- und Biodiversit\u00e4tsforschung, dem Kunstgewerbemusuem der Staatlichen Museen zu Berlin und der Kunstbibliothek der Staatlichen Museen zu Berlin. ForschungsthemaMit einem metadisziplin\u00e4ren Blick auf die Strategien formbasierter Klassifikation und Systematisierung wird anhand einer biologischen Sammlung von Krebstieren untersucht, welche \u00bbMerkmale\u00ab so auff\u00e4llig im Sinne der Aufmerksamkeitssteuerung sind, dass sie eine Theoriebildung ansto\u00dfen.Auf Basis einer biologischen Sammlung von Krebstieren (\u00bbKrabben-Projekt\u00ab) soll eine Revision der Systematisierungskultur in der Biologie hinsichtlich des Spannungsverh\u00e4ltnisses von Typologie und Genealogie vorgenommen werden. Form wird dabei als Grundlage der Klassifikation und Gruppenbildung und damit als Unterscheidungsressource untersucht, die je nach Disziplin unterschiedlich genutzt wird.Neben einer disziplin\u00fcbergreifenden Kritik von Form und Formwahrnehmung liegen Untersuchungen zur Theorie von Klassifikation und Gruppenbildung, zu den Begriffen \u00bbMerkmal\u00ab und \u00bbDetail\u00ab, der naturwissenschaftlichen Beobachtungsmethoden und zur Psychologie der Wahrnehmung und Aufmerksamkeit vor. Jedoch wird mit der praxisbezogenen Evaluation eines zentralen methodischen Instrumentariums in der vorgeschlagenen Konstellation Neuland betreten. Signifikant sind dabei die Medien der Beobachtung und Aufzeichnung.ZielsetzungZiel ist ein metadisziplin\u00e4rer Blick auf die Strategien formbasierter Klassifikation und Systematisierung. Es soll erforscht werden, welche \u00bbMerkmale\u00ab so auff\u00e4llig im Sinne der Aufmerksamkeitssteuerung sind, dass sie eine Theoriebildung ansto\u00dfen. Damit soll n\u00e4her definiert werden, was insgesamt aus einer Form abgeleitet werden kann und unter welchen Bedingungen und mit welchen Mitteln (auch im Sinne konkreter technischer Medien) dies geschieht. Was steuert Aufmerksamkeit, wenn Form in einer diskreten Datenwelt als Gr\u00f6\u00dfe keine Rolle mehr spielen sollte? Wie kann die Beziehung von Betrachter und Betrachtetem reflektiert werden, und wie lassen sich die hier erbrachten Erkenntnisse auf andere wissenschaftliche und kreative Disziplinen und ihre Sehweisen \u00fcbertragen? Die vergleichende Analyse soll au\u00dferdem verdeutlichen, dass kulturelle Faktoren und Medien (Geschmacks- und Stilbildung, \u00dcberlieferung, \u00f6konomische Bewertung) die Erforschung von Naturobjekten nicht nur (st\u00f6rend) beeinflussen, sondern im naturwissenschaftlichen Kontext auch produktiv werden k\u00f6nnen.Durchf\u00fchrungEin einf\u00fchrender Workshop wird zur interdisziplin\u00e4ren Methodik und zum bild- und kulturwissenschaftlichen \u00dcbertrag veranstaltet.Eine Beobachtungsebene soll eingesetzt werden, welche die natur- und kulturwissenschaftlichen Analysen gegen\u00fcberstellt und dokumentiert. Hierzu bedarf es der Mitarbeit der Psychologie, Ethnologie und der Expertise der Designgeschichte (Psychologie der Aufmerksamkeit; Reflexivit\u00e4t der Designgeschichte).Es erfolgt die Sichtung und Auswahl kontextrelevanter zoologischer Objekte f\u00fcr eine vergleichende Analyse im Rahmen von Publikationen und Ausstellungen sowie das Sammeln und Bearbeiten zoologischer Objekte. Anschlie\u00dfend wird eine Matrix f\u00fcr die vergleichende Analyse von Merkmalen, Eigenschaften und Aspekten und die weiterf\u00fchrende Recherche hergestellt.Die Recherche von naturwissenschaftlichen Medien (Pr\u00e4parate, Fotografien, Film u.a.) erfolgt in Best\u00e4nden der HU und des Museums f\u00fcr Naturkunde Berlin, die von kunst- und kulturhistorischen Objekten in Best\u00e4nden des Kunstgewerbemuseums und der Kunstbibliothek.Die methodologische Untersuchung wird um eine gemeinsame Arbeitsebene mit den Akteuren des Projekts Sammlungserschlie\u00dfung erweitert, da die Konfrontation mit ungeordneten oder anonymen Sammlungsobjekten in besonderer Weise Aufschluss \u00fcber kulturelle, kognitive und professionelle Mechanismen der Begriffsbildung gibt. Enge Verbindung besteht auch zum Projekt Genese &#38; Genealogie, wo Aspekte von Formbildung und -wandel analysiert werden. Im Projekt Attention &#38; Form allerdings steht die \u00c4nderung der Morphologie in der Zeit selbst, sowie deren Bewertung durch den Betrachter im Mittelpunkt.Die vergleichende Analyse und Synthese zoologischer Gestalten beinhaltet zugleich eine Hypothese \u00fcber die Transformation organismischer Strukturen und Formen und schl\u00e4gt damit eine Br\u00fccke zur Gestaltung.ErgebnissicherungDie Arbeit des Projektes soll durch (interdisziplin\u00e4re) Fachpublikationen begleitet werden. Die Ergebnisse des Projektes sind zudem Gegenstand eines experimentellen Ausstellungsprojektes unter dem Arbeitstitel \u00bbNatur als Kunst\u00ab (zur Analyse naturwissenschaftlicher Forschungsobjekte mit kunstwissenschaftlicher Methodik), als Teil einer Ausstellung zum Thema \u00bbForm und Strukturen in Natur und Design\u00ab, die zusammen mit dem Projekt \u00bbGenese &#38; Genealogie\u00ab im Museum f\u00fcr Kunstgewerbe pr\u00e4sentiert werden soll.In der Ausstellung sollen Objekte der Zoologischen Sammlung und von anderen Sammlungsteilen der HU sowie des Museums f\u00fcr Naturkunde mit Designobjekten, druckgrafischen Arbeiten, Skulpturen und anderen Exponaten aus Best\u00e4nden der Staatlichen Museen Berlin konfrontiert werden. Ein Webauftritt, welcher Aspekte der Ausstellung aufgreift und zu Lehrzwecken weiterf\u00fchrt, soll interdisziplin\u00e4re Vorarbeiten (Online-Lehrplattform zur Morphologie PIXTURA) weiterf\u00fchren.",
+        "body_en": "Research topicWe will study a biological collection of crustaceans (\u00bbcrab project\u00ab) to critically revise the systematization culture of biology, particularly in view of the tension between typology and genealogy. We will investigate form as a basis for classification and group formation, and thus as a source of differentiation in each respective discipline.In addition to a transdisciplinary critique of form and the perception of forms, extensive work has examined the theory of classification and group formation; these include the concepts of \u00bbattribute\u00ab and \u00bbdetail\u00ab as well as scientific observation methods; they also include perception and attention and their economy. However, we will break new ground in that we propose a constellation of disciplines to perform a praxis-oriented evaluation of a central methodological instrumentarium. Media of observation and recording will play a significant role in this process.ObjectivesThe goal of the project is to acquire a meta-disciplinary perspective on form-based classification and systematization. We will investigate which \u00bbcharacteristics\u00ab have so much control over the observer\u2019s attention that they inspire the creation of a theory. We will thus seek to precisely define what can be extrapolated from a form and how (in the sense of concrete technical media) this takes place. What captures one\u2019s attention if form no longer exists in a discrete world of data? How can we reflect on the interaction between observer and observed, and how can the insights gained be applied to other scientific and creative disciplines and their respective ways of seeing? The comparative analysis should clarify that cultural factors and media (such as the formation of taste and style, tradition, and economic considerations) not only influence the investigation of natural objects (in disruptive ways), but can also be productive in the context of the natural sciences.ExecutionAs a first step, we will hold a workshop on interdisciplinary methodology and transfer with visual and cultural history and theory. Then we will implement a level of observation that compares and documents analytical work in the natural sciences and cultural history and theory. This will require a collaboration between psychology, ethnology, and the particular expertise of design history (psychology of attention, reflexivity of the history of design). Next, we will assess and select contextually relevant zoological objects and perform a comparative analysis in the context of publications and exhibitions that collect and process zoological objects. Subsequently, we will create a matrix for the comparative analysis of characteristics, attributes, and aspects and apply it to further research. In a further step, we will survey scientific media (preparations, photographs, film, etc.) in the collections of HU and the Museum f\u00fcr Naturkunde, and objects of art- and cultural-historical significance in the collections of the State Museums of Berlin. The methodological examination will then be enhanced by joint work with the project \u00bbTransdisciplinary Indexing of Cultural-Historical Collections\u00ab for the confrontation with subordinated and anonymous collection objects provides valuable information on cultural, cognitive, and professional mechanisms of concept formation. At this point, our work is also closely related to the project \u00bbGenesis &#38; Genealogy\u00ab, which analyzes questions of form and the emergence and mutation of form. In our own context, however, we are interested in changes in morphology over time and their evaluation by the observer. Lastly, the comparative analysis and synthesis of zoological forms includes a hypothesis about the transformation of organic structures and forms, thereby building a bridge to Gestaltung.Securing the resultsThe work of the project will result in (interdisciplinary) publications. This interdisciplinary project will also be the subject of an experimental exhibition with the working title \u00bbNature as Art\u00ab (on the analysis of scientific research objects using art-historical methods), which will be part of a larger exhibition on issues of \u00bbForm and Structures in Nature and Design\u00ab to be presented in collaboration with the project \u00bbGenesis &#38; Genealogy\u00ab at the Museum of Applied Arts.In this exhibition, objects from the Zoological Collection and other collections of HU and the Museum f\u00fcr Naturkunde will be directly juxtaposed with design objects, prints, sculptures, and other exhibits from the collections of the State Museums of Berlin. A web presence that develops aspects of the exhibition for pedagogical purposes will help foster the interdisciplinary context (online pedagogical platform on morphology, PIXTURA).",
+        "body_es": "Con una mirada meta-disciplinaria a las estrategias de clasificaci\u00f3n y sistematizaci\u00f3n se investigar\u00e1, utilizando una colecci\u00f3n biol\u00f3gica de crust\u00e1ceos, cuales \u00bbrasgos\u00ab son tan sobresalientes en el sentido de dirigir la atenci\u00f3n, que ponen en marcha una formaci\u00f3n te\u00f3rica. Tanto en la vida diaria como en las ciencias, los objetos son valorados y agrupados basados en su forma, patrones y estructuras, pero los procesos psicol\u00f3gicos involucrados no est\u00e1n aclarados en su totalidad. El proyecto Atenci\u00f3n y Forma examinar\u00e1  la evoluci\u00f3n morfol\u00f3gica de los crust\u00e1ceos as\u00ed como la historia material y estil\u00edstica de la fotograf\u00eda y otro tipo de im\u00e1genes desde sus distintas disciplinas participantes, sin embargo la comparaci\u00f3n de los m\u00e9todos y resultados se realizar\u00e1 de manera interdisciplinaria.",
+        "slug_de": "attention-form",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Attention &#38; Form",
+        "title_en": "Attention &#38; Form",
+        "title_es": "Atenci\u00f3n y Forma",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/museen-und-einrichtungen/kunstgewerbemuseum/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.smb.museum/museen-und-einrichtungen/kunstbibliothek/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=40&#38;n=7 https://www.interdisciplinary-laboratory.hu-berlin.de/de/Sammlungserschlie%C3%9Fung https://www.interdisciplinary-laboratory.hu-berlin.de/de/Genese-%26-Genealogie https://www.interdisciplinary-laboratory.hu-berlin.de/de/Attention-%26-Form http://www.pixtura.org/index.php http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/museen-und-einrichtungen/kunstgewerbemuseum/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.smb.museum/museen-und-einrichtungen/kunstbibliothek/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=40&#38;n=7 https://www.interdisciplinary-laboratory.hu-berlin.de/de/Sammlungserschlie%C3%9Fung https://www.interdisciplinary-laboratory.hu-berlin.de/de/Genese-%26-Genealogie https://www.interdisciplinary-laboratory.hu-berlin.de/de/Attention-%26-Form http://www.pixtura.org/index.php http://www.naturkundemuseum-berlin.de/ http://www.interdisciplinary-laboratory.hu-berlin.de/en/Indexing-Collections http://www.interdisciplinary-laboratory.hu-berlin.de/en/Genesis-%26-Genealogy http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.pixtura.org/ http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/museen-und-einrichtungen/kunstgewerbemuseum/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.smb.museum/museen-und-einrichtungen/kunstbibliothek/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=40&#38;n=7 https://www.interdisciplinary-laboratory.hu-berlin.de/de/Sammlungserschlie%C3%9Fung https://www.interdisciplinary-laboratory.hu-berlin.de/de/Genese-%26-Genealogie https://www.interdisciplinary-laboratory.hu-berlin.de/de/Attention-%26-Form http://www.pixtura.org/index.php http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/museen-und-einrichtungen/kunstgewerbemuseum/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.smb.museum/museen-und-einrichtungen/kunstbibliothek/home.html?tx_smb_pi1%5Benabled%5D=1&#38;cHash=395ac52715e0a271f35c94321b5fb669 http://www.naturkundemuseum-berlin.de/ http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=40&#38;n=7 https://www.interdisciplinary-laboratory.hu-berlin.de/de/Sammlungserschlie%C3%9Fung https://www.interdisciplinary-laboratory.hu-berlin.de/de/Genese-%26-Genealogie https://www.interdisciplinary-laboratory.hu-berlin.de/de/Attention-%26-Form http://www.pixtura.org/index.php http://www.naturkundemuseum-berlin.de/ http://www.interdisciplinary-laboratory.hu-berlin.de/en/Indexing-Collections http://www.interdisciplinary-laboratory.hu-berlin.de/en/Genesis-%26-Genealogy http://www.smb.museum/smb/standorte/index.php?p=2&#38;objID=37&#38;n=8 http://www.pixtura.org/",
+        "source": "content_projekt", # optional: db table name
+        "mitglieder": [		# relation: content_projekt_TO_public.content_mitglied
+            238,
+            258,
+            224,
+            534,
+            571,
+            266,
+            284,
+            558,
+            278,
+            344,
+            534,
+            278,
+            468,
+            571,
+            524,
+            227,
+            290,
+            266,
+            772,
+            380,
+            238,
+            348,
+            454,
+            1172,
+            344,
+            224,
+            236,
+            524,
+            290,
+            236,
+            380,
+            258
+        ],
+        "publikationen": [ # relation: content_projekt_TO_content_publikation
+            1688,
+            1690,
+            1733,
+            1727,
+            1729,
+            1597,
+            2020,
+            2011,
+            1768,
+            2010,
+            1775,
+            1772,
+            1796,
+            1800,
+            1802,
+            1805,
+            1855,
+            1865,
+            1866,
+            1859,
+            1860,
+            1867,
+            1902,
+            1687,
+            932,
+            2021,
+            908,
+            1633
+        ],
+        "posts": [ # relation: content_projekt_TO_content_post
+            195
+        ],
+        "events": [ # relation: content_projekt_TO_public.content_event
+            1211,
+            1210
+        ],
+        "categories": [ # ???
+            10,
+            9
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/publikationen
+
+[
+    {
+        "id": 2286,			# page_ptr_id
+        "date": "2015-08-09", # optional
+        "body": "PDF Tagungsband",
+        "main_image_id": 0,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "main_image_caption": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        "after_title": "In: Bredekamp, Horst/Sch\u00e4ffner, Wolfgang (Hg.): Haare h\u00f6ren \u2013 Strukturen wissen \u2013 R\u00e4ume agieren. Berichte aus dem Interdisziplin\u00e4ren \u00bbLabor Bild Wissen Gestaltung\u00ab. Bielefeld: transcript, S. 185\u2013198.",
+        "before_title": "Bock von W\u00fclfingen, Bettina (2015):",
+        "body_de": "PDF Tagungsband",
+        "body_en": "",
+        "body_es": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "slug_de": "bilder-der-bewegung-sexualitat-im-zellkern-um-1900-und-nach-2000",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Bilder der Bewegung. Sexualit\u00e4t im Zellkern um 1900 und nach 2000.",
+        "title_en": "",
+        "title_es": "",
+        "is_digital": true,
+        "is_open_access": true,
+        "is_print": true,
+        "language": "de",
+        # "qualification": "1", # ???
+        # "typ": "3", # ???
+        "year": "2015-08-09", # ???
+        # "urls": "",
+        "source": "content_publikation", # optional: db table name
+        "mitglieder": [ # relation: content_publikation_TO_public.content_mitglied
+            376
+        ],
+        "projekte": [ # relation: content_publikation_TO_content_projekt
+            62
+        ],
+        "categories": [ # ???
+            4,
+            3
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/ausstellungen
+
+[
+    {
+        "id": 1350,			# page_ptr_id
+        "featured": false, # optional
+        "date": "1993-09-24", # optional
+        "body": "Ausstellung des Instituts f\u00fcr Europ\u00e4ische Kulturgeschichte der Universit\u00e4t Ausgburg und des Staatsarchivs Augsburg anl\u00e4\u00dflich des 64. Deutschen Archivtags in Augsburg (mit Katalog).",
+        "main_image_caption": 0,
+        "images": [],			# image_carousel
+        "location_title": "Augsburg, Staatsarchiv",
+        "location_address": "",
+        "location_address2": "",
+        "start_date": "1993-09-24 13:00:00+02",
+        "end_date": "1993-10-22 18:00:00+01",
+        "gefoerdert_durch_img_id": 0,
+        "main_image_id": "",
+        "body_de": "Ausstellung des Instituts f\u00fcr Europ\u00e4ische Kulturgeschichte der Universit\u00e4t Ausgburg und des Staatsarchivs Augsburg anl\u00e4\u00dflich des 64. Deutschen Archivtags in Augsburg (mit Katalog).",
+        "body_en": "",
+        "body_es": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "slug_de": "augsburger-humanismus-der-fremde-briefe-und-dokumente-aus-dem-archiv-friedmann",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Augsburger Humanismus in der Fremde. Briefe und Dokumente aus dem Archiv Friedmann.",
+        "title_en": "",
+        "title_es": "",
+        "active": true, # optional
+        # "urls": "",
+        "source": "public.content_ausstellung", # optional: db table name
+        "mitglieder": [ # relation: public.content_ausstellung_TO_public.content_mitglied
+            250
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/content_category 		# dissolve this
+
+[
+    {
+        "id": 102,
+        "title": "Drittmittelverwaltung",
+        "parent_id": 76,
+        "description": "",
+        "slug": "drittmittelverwaltung",
+        "full_name": "BWG Aktuell &#38;gt; Funktion &#38;gt; Finanzen &#38; Personal &#38;gt; Drittmittelverwaltung",
+        "description_de": "",
+        "description_en": "",
+        "description_es": "",
+        "title_de": "Drittmittelverwaltung",
+        "title_en": "Administration of Third-Party Funds",
+        "title_es": "Gesti\u00f3n Fondos Externos",
+        "linkable": false, # optional
+        "weight": 0, # optional
+        "page_link": 0,
+        # "urls": "",
+        "source": "public.content_category", # optional: db table name
+        "members": [ # ??? Mitglieder oder "members" einer Kategorie?
+            421,
+            595
+        ]
+    },
+    # ...
+]
+
+/events
+
+[
+    {
+        "id": 1236,		# page_ptr_id
+        "date": "2005-09-29",
+        "body": "Eine Tagung des Hermann von Helmholtz-Zentrums f\u00fcr Kulturtechnik, 7. Treffen von nordamerikanischem und deutschem Hochschullehrernachwuchs der germanistischen Medi\u00e4vistik Zum Programm",
+        "main_image_id": 0,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "end_date": "2005-10-01 19:00:00+02",
+        "location_address": "Unter den Linden 6, Raum 3031",
+        "location_address2": "",
+        "location_title": "Hauptgeb\u00e4ude der HU Berlin",
+        "start_date": "2005-09-29 20:00:00+02",
+        "body_de": "Eine Tagung des Hermann von Helmholtz-Zentrums f\u00fcr Kulturtechnik, 7. Treffen von nordamerikanischem und deutschem Hochschullehrernachwuchs der germanistischen Medi\u00e4vistik Zum Programm",
+        "body_en": "",
+        "body_es": "",
+        "slug_de": "tagung-imaginatio-imagination-und-deixis-stimulation-und-lenkung-von-wahrnehmung-mittelalterlichen-texten-und-bildern",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Tagung \u00bbImaginatio. Imagination und Deixis \u2013 Stimulation und Lenkung von Wahrnehmung in mittelalterlichen Texten und Bildern\u00ab",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "https://www2.hu-berlin.de/hzk/bsz.php?show=veranstaltungen&#38;which=imaginatio https://www2.hu-berlin.de/hzk/bsz.php?show=veranstaltungen&#38;which=imaginatio https://www2.hu-berlin.de/hzk/bsz.php?show=veranstaltungen&#38;which=imaginatio https://www2.hu-berlin.de/hzk/bsz.php?show=veranstaltungen&#38;which=imaginatio",
+        "source": "public.content_event", # optional: db table name
+        "posts": [ # relation: public.content_event_TO_content_post
+            1206
+        ],
+        "mitglieder": [ # relation: public.content_event_TO_public.content_mitglied
+            1328
+        ],
+        "categories": [ # ???
+            3
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/mitglieder
+
+[
+    {
+        "id": 480,			# page_ptr_id
+        "date": "2016-05-24",
+        "body": "Till Mittasch hat Theater- und Filmwissenschaft, sowie zuletzt Chinastudien an der Freien Universit\u00e4t Berlin studiert. Seinen M.A. in der Theaterwissenschaften erwarb er im Jahr 2014. ",
+        "main_image_id": 363,
+        "featured": false, # optional
+        "images": [],			# image_carousel
+        "cv_file_id": "", # optional
+        "vcard_file_id": "", # optional
+        "email": "till.mittasch@hu-berlin.de",
+        # "links": [], # ???
+        "body_de": "Till Mittasch hat Theater- und Filmwissenschaft, sowie zuletzt Chinastudien an der Freien Universit\u00e4t Berlin studiert. Seinen M.A. in der Theaterwissenschaften erwarb er im Jahr 2014. ",
+        "body_en": "Till Mittasch studied Theatre and Film and, more recently, Chinese Studies at Freie Universit\u00e4t Berlin. He attained a Master's degree in Theatre Studies in 2014. ",
+        "body_es": "Till Mittasch estudi\u00f3 ciencias cinematogr\u00e1ficas y del teatro y, m\u00e1s recientemente, estudios de China en la Freie Universit\u00e4t Berlin (Universidad Libre de Berl\u00edn). Obtuvo su t\u00edtulo de m\u00e1ster en ciencias del teatro en 2014.",
+        "slug_de": "till-mittasch",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Till Mittasch",
+        "title_en": "",
+        "title_es": "",
+        "main_image_caption": "",
+        "telefonnummer": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "schwerpunkt": 13, # schwerpunkt_category_id
+        "active": false, # optional
+        # "urls": "",
+        "source": "public.content_mitglied", # optional: db table name
+        "projekte": [ # relation: public.content_mitglied_TO_content_projekt
+            60,
+            60
+        ],
+        "categories": [ # ???
+            50,
+            45
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/newsletter
+
+[
+    {
+        "id": 46,					# page_ptr_id
+        "date": "2016-04-01",
+        "body": "Newsletter 10",
+        "main_image_id": 638,
+        "featured": false, # optional
+        images: [ # image_carousel
+        	639,
+        	640,
+        	642,
+        	643,
+        	644,
+        	645,
+        	646,
+        	647,
+        	648,
+        	649,
+        	650,
+        	651,
+        	652,
+        	653,
+        	654,
+        	655,
+        	656,
+        	657,
+        	658,
+        	659,
+        	660,
+        	662,
+        	663,
+        	664,
+        	665
+        ],
+        "body_de": "Newsletter 10",
+        "body_en": "Newsletter 10",
+        "body_es": "El bulet\u00edn del Cluster# 10",
+        "slug_de": "newsletter-interdisziplinares-labor-10",
+        "slug_en": "", # optional
+        "slug_es": "", # optional
+        "title_de": "Newsletter Interdisziplin\u00e4res Labor #10",
+        "title_en": "Newsletter# 10",
+        "title_es": "El bulet\u00edn del Cluster# 10",
+        "main_image_caption": "",
+        "main_image_caption_de": "",
+        "main_image_caption_en": "",
+        "main_image_caption_es": "",
+        "gefoerdert_durch_img_id": 0,
+        "active": true, # optional
+        # "urls": "",
+        "source": "public.content_newsletter", # optional: db table name
+        "categories": [ # ???
+            91,
+            92
+        ],
+        "tags": [
+            "...",
+            "..."
+        ]
+    },
+    # ...
+]
+
+/tags
+
+[
+    {
+        "id": 1,
+        "name": "Abschlusspr\u00e4sentation",
+        "slug": "abschlussprasentation",
+        # "urls": ""
+    },
+    # ...
+]
+
+/document
+
+[
+    {
+        "id": 1,
+        "title": "CV Hans Wurst",
+        "file": "documents/Richtlinie_befr_Mittelbau_nach_Novelle_WissZeitVG_08_02_2016_ohne_Markierungen.pdf",
+        "created_at": "2016-04-19 11:15:31.208719+02", # optional
+        # "urls": ""
+    },
+    # ...
+]
+
+/embeds oder /videos ?
+
+[
+    {
+        "id": 1,
+        "url": "https://vimeo.com/72477323",
+        "type": "video",
+        "title": "Interview: \\&quot;Shroud\\&quot; by Jodie Carey at the Anatomical Theater in Berlin",
+        "author_name": "Berlin Art Link",
+        "provider_name": "Vimeo",
+        "thumbnail_url": "https://i.vimeocdn.com/video/446425709_640.jpg",
+        "width": 640,
+        "height": 360,
+        "last_updated": "2016-07-06 12:00:17.633135+02",
+        # "urls": "https://vimeo.com/72477323 https://player.vimeo.com/video/72477323 https://i.vimeocdn.com/video/446425709_640.jpg https://vimeo.com/72477323 https://player.vimeo.com/video/72477323 https://i.vimeocdn.com/video/446425709_640.jpg"
+    },
+    # ...
+]
+
+/images
+
+[
+    {
+        "id": 26,
+        "title": "Newsletter 4",
+        "file": "original_images/BWG_Newsletter_4.jpg",
+        "width": 700,
+        "height": 986,
+        "created_at": "2016-04-19 16:40:08.066713+02",
+        "focal_point_x": "", # optional
+        "focal_point_y": "", # optional
+        "focal_point_width": "", # optional
+        "focal_point_height": "", # optional
+        "file_size": 383487,
+        # "urls": ""
+    },
+    # ...
+]
+
+/renditions
+
+[
+    {
+        "id": 235,
+        "file": "images/Bildakt_RGB.width-960.jpg",
+        "width": 960,
+        "height": 576,
+        "focal_point_key": "", # optional
+        "filter_id": 10, # optional
+        "image_id": 19, # optional
+        # "urls": ""
+    },
+    # ...
+]
+
