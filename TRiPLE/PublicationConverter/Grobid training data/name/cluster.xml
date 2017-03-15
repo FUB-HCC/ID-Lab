@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <teiHeader>
+        <fileDesc>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author><surname>Golsenne</surname>, <forename>T.</forename>/<surname>Ribault</surname>,<forename>P.</forename> </author>
+                        <author><surname>Adelmann</surname>, <forename>Ralf</forename>/<surname>Frercks</surname>, <forename>Jan</forename>/<surname>Heßler</surname>, <forename>Martina</forename>/<surname>Hennig</surname>, <forename>Jochen</forename></author>
+                        <author><surname>Lehmann</surname>, <forename>J.</forename>/<surname>Müller-Birn</surname>, <forename>Claudia</forename> et al.</author>
+                        <author><surname>Gienger</surname>, <forename>J.</forename>/<surname>Severin</surname>, <forename>N.</forename>/<surname>Rabe</surname>, <forename>Jürgen</forename> <middlename>P.</middlename> /<surname>Sokolov</surname>, <forename>I.</forename><middlename>M.</middlename></author>
+                        <author><surname>Hennig</surname>, <forename>Jochen</forename>/<surname>Andraschke</surname>, <forename>Udo</forename> (Hg.) </author>
+                        <author><forename>Barbara</forename> <surname>Junge</surname>/<forename>Zane</forename> <surname>Berzina</surname>/<forename>Walter</forename> <surname>Scheiffele</surname>/<forename>Wim</forename> <surname>Westerveld</surname>/<surname>Zwick</surname>, <forename>Carola</forename></author>
+                        <author><surname>Hendrich</surname>, <forename>Elisabeth</forename>/<surname>Strobach</surname>, <forename>Tilo</forename>/<surname>Buss</surname>, <forename>Martin</forename>/<surname>Müller</surname>, <forename>Hermann</forename> <middlename>J.</middlename>/<surname>Schubert</surname>, <forename>Torsten</forename></author>
+                        <author><surname>Bartz</surname> , <forename>Jessica</forename>/<surname>Horacek</surname>, <forename>S.</forename></author>
+                        <author><surname>Bahl</surname>, <forename>Eva</forename>/<surname>Bergh</surname>, <forename>Sarah</forename> </author>
+                        <author><surname>Bredekamp</surname>, <forename>Horst</forename>/<surname>Dünkel</surname>, <forename>Vera</forename>/<surname>Schneider</surname>, <forename>Birgit</forename></author>
+                        <author><surname>Vogl</surname>, <forename>Joseph</forename>/<surname>Schimma</surname>, <forename>Sabine</forename></author>
+                        <author><surname>Völlnagel</surname>, <forename>Jörg</forename>/<surname>Wullen</surname>, <forename>Moritz</forename> </author>
+                        <author><surname>Bösl</surname>, <forename>Angela</forename> </author>
+                        <author><surname>Seidl</surname>, <forename>Ernst</forename>/<surname>Aumann</surname>, <forename>Philipp</forename>/<surname>Duerr</surname>, <forename>Frank</forename></author>
+                        <author><surname>Engel</surname>, <forename>Franz</forename>/<surname>Marienberg</surname>, <forename>Sabine</forename></author>
+                        <author><surname>Schramke</surname>, <forename>Sandra</forename>/<surname>Bock</surname>, <forename>Wolfgang</forename> </author>
+                        <author><surname>Krausse</surname>, <forename>Joachim</forename>/<surname>Lichtenstein</surname>, <forename>Claude</forename></author>
+                        <author><surname>Kanning</surname>, <forename>Nils</forename>/<surname>Ko</surname>, <forename>Yumi</forename>/<surname>Staudacher</surname>, <forename>Matthias</forename> </author>
+                        <author><surname>Vetter</surname>, <forename>A.</forename>/<surname>Witt</surname>, <forename>F.</forename>/<surname>Sander</surname>, <forename>O.</forename>/<surname>Duda</surname>, <forename>G.</forename><middlename>N.</middlename>/<surname>Weinkamer</surname>, <forename>R.</forename></author>
+                        <author><forename>B.</forename> <surname>Weber</surname>, <forename>E.</forename> <middlename>M.</middlename> <surname>Tranfield</surname>, <forename>J.</forename> <middlename>L.</middlename> <surname>Höög</surname>, <forename>D.</forename> <surname>Baum</surname>, <forename>C.</forename> <surname>Antony</surname>, <forename>T.</forename> <surname>Hyman</surname>, <forename>J.-M.</forename> <surname>Verbavatz</surname>, <forename>S.</forename> <surname>Prohaska</surname></author>
+                        <author><surname>Leinfelder</surname>, <forename>Reinhold</forename>/<surname>Trischler</surname>, <forename>Helmuth</forename></author>
+                            <author><surname>Hamann</surname>, <forename>Alexandra</forename>/<surname>Wagenbreth</surname>, <forename>Hennig</forename></author>
+                            <author><surname>Oswalt</surname>, <forename>Philipp</forename>/<surname>Overmeyer</surname>, <forename>Klaus</forename>/<surname>Misselwitz</surname>, <forename>Philipp</forename> </author>
+                            <author><surname>Basaran</surname>, <forename>Aylin</forename>/<surname>Köhne</surname>, <forename>Julia</forename> <middlename>B.</middlename>/<surname>Sabo</surname>, <forename>Klaudija</forename></author>
+                            <author><surname>Gaschler</surname>, <forename>Robert</forename>/<surname>Ahmed</surname>, <forename>Faten</forename></author>
+                            <author><surname>Schwesinger</surname>, <forename>Sebastian</forename>/<surname>Falkner</surname>, <forename>Gerhard</forename> </author>
+                            <author><surname>Knaut</surname>, <forename>Andrea</forename>/<surname>Kurz</surname>, <forename>Constanze</forename></author>
+                            <author><surname>Bayer</surname>, <forename>Lothar</forename>/<surname>Quindeau</surname>, <forename>Ilka</forename></author>
+                            <author><surname>Schultz</surname>, <forename>T.</forename>/<surname>Schlesinger</surname>, <forename>R.</forename>/<surname>Niederhausen</surname>, <forename>J.</forename>/<surname>Henneberger</surname>, <forename>F.</forename>/<surname>Sadofev</surname>, <forename>S.</forename> /<surname>Blumstengel</surname>, <forename>S.</forename>/<surname>Vollmer</surname>, <forename>A.</forename>/<surname>Bussolotti</surname>, <forename>F.</forename>/<surname>Yang</surname>, <forename>J.-P.</forename>/<surname>Kera</surname>, <forename>S.</forename>/<surname>Parvez</surname>, <forename>K.</forename>/<surname>Ueno</surname>, <forename>N.</forename>/<surname>Müllen</surname>, <forename>K.</forename>/<surname>Koch</surname>, <forename>Norbert</forename></author>
+                            
+                    </analytic>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+</TEI>

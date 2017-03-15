@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <biblStruct>
+    <analytic>
+        <title level="a" type="main">Comment faire? La technique comme pouvoir</title>
+        <author>
+            <persName>
+                <forename type="first">Patricia</forename>
+                <surname>Ribault</surname>
+            </persName>
+        </author>
+    </analytic>
+    <monogr>
+        <title level="m">Essais de Bricologie. Ethnologie de l’art et du design contemporains. Revue Techniques et Culture</title>
+        <editor>Golsenne, T./Ribault, P.</editor>
+        <meeting>
+            <address>
+                <addrLine>Paris</addrLine>
+            </address>
+        </meeting>
+        <imprint>
+            <publisher>Éditions EHESS</publisher>
+            <date type="published" when="2015" />
+        </imprint>
+    </monogr>
+</biblStruct>
+    <biblStruct>
+        <analytic>
+            <title level="a" type="main">Readers Preference and Behavior on Wikipedia</title>
+        <author>
+            <persName>
+                <forename type="first">J</forename>
+                <surname>Lehmann</surname></persName>
+        </author>
+        <author><persName><forename type="first">Claudia</forename><surname>Müller-Birn</surname>
+        </persName>
+        </author>
+    </analytic>
+        <monogr>
+            <title level="m">Proceedings of the 25th ACM Conference on Hypertext and Hypermedia</title>
+            <meeting>
+                the 25th ACM Conference on Hypertext and Hypermedia
+                <address>
+                    <addrLine>Santiago, 2014</addrLine>
+                </address>
+            </meeting><imprint>
+                <date type="published" when="2014" />
+                <biblScope unit="page" from="88" to="97" /> 
+            </imprint>
+        </monogr>
+    </biblStruct>
+</TEI>

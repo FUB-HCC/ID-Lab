@@ -1,0 +1,13 @@
+README
+
+Tool to create RML from json files.
+Features:
+- Global mappings (Not for single class, but for all of them)
+- Local Mappings
+- Simple Literal relationships
+- Parent triples map
+- Template generation for cyclic data
+
+USAGE:
+- python3 main.py
+- Follow prompts in console

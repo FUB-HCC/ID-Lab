@@ -1,0 +1,2024 @@
+{
+    "slugs": {
+        "content_job.json": "slug_de",
+        "content_kooperation.json": "slug_de",
+        "content_nachwuchsfoerderung.json": "slug_de",
+        "content_podcast.json": "slug_de",
+        "content_post.json": "slug_de",
+        "content_pressemitteilung.json": "slug_de",
+        "content_projekt.json": "slug_de",
+        "content_publikation.json": "slug_de",
+        "public_content_ausstellung.json": "slug_de",
+        "public_content_category.json": "slug",
+        "public_content_event.json": "slug_de",
+        "public_content_mitglied.json": "slug_de",
+        "public_content_newsletter.json": "slug_de",
+        "public_content_pagecategoryrelationship.json": "slug_de",
+        "public_content_pagepagerelationship.json": "slug_de",
+        "taggit_tag.json": "slug",
+        "wagtaildocs_document.json": "file",
+        "wagtailembeds_embed.json": "url",
+        "wagtailimages_image.json": "id",
+        "wagtailimages_rendition.json": "id"
+    },
+    "folder": "input/",
+    "prefixes": [
+        "@prefix prov: <http://example.com/eg/>. # ?? WOOOT",
+        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
+        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
+        "@prefix dso: <http://example.com/eg/>. # ?? WOOOT",
+        "@prefix rml: <http://semweb.mmlab.be/ns/rml#> .",
+        "@prefix rr: <http://www.w3.org/ns/r2rml#> .",
+        "@base <http://example.com/base>  .",
+        "@prefix timeline: <http://example.com/placeholder3/> . # ??? INSERT ONTOLOGY",
+        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+        "@prefix dct: <http://purl.org/dc/terms/> .",
+        "@prefix fabio: <http://www.w3.org/2000/FABIO/rdf-schema#> .# ??? INSERT ONTOLOGY",
+        "@prefix schema: <http://schema.org/>.",
+        "@prefix vivo: <http://vivoweb.org/ontology/core#> .",
+        "@prefix bio: <http://purl.org/vocab/bio/0.1/> .",
+        "@prefix foaf: <http://xmlns.com/foaf/0.1/> .",
+        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+        "@prefix sko: <http://example.com/lalalala/> . # ??? INSERT ONTOLOGY",
+        "#@prefix id: <http://example.com/id/> .",
+        "#@prefix ns: <http://example.com/ns/> .",
+        "@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .",
+        "@prefix schema.org: <http://example.com/placeholder2/> . # ??? INSERT ONTOLOGY",
+        "@prefix org: <http://www.w3.org/2002/07/owl#> . # INSERT ONTOLOGY",
+        "@prefix eg: <http://example.com/eg/> .",
+        "@prefix ql: <http://semweb.mmlab.be/ns/ql#> .",
+        "@prefix dc: <http://purl.org/dc/elements/1.1/> .",
+        "@prefix event: <http://example.com/placeholder/> . # ??? INSERT ONTOLOGY",
+        "@prefix xsd: <http://www.w3.org/2001/XMLSchema> .",
+        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#>."
+    ],
+    "variables": [
+        {
+            "key": "VAR_BASEURL",
+            "value": "http://www.example.com/"
+        }
+    ],
+    "files": [
+        {
+            "filename": "content_nachwuchsfoerderung.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "nachwuchsfoerderung",
+            "template": "slug_de",
+            "class": "fabio:NewsItem",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "date",
+                    "predicate": "dc:issued",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_kooperation.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "kooperation",
+            "template": "slug_de",
+            "class": "org:OrganizationalCollaboration",
+            "mappings": [
+                {
+                    "reference": "date",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "content_kooperation|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_kooperation|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_job.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "job",
+            "template": "slug_de",
+            "class": "fabio:Announcement",
+            "mappings": [
+                {
+                    "reference": "date",
+                    "predicate": "dc:issued",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "content_job|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_job|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_job|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_projekt.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "projekt",
+            "template": "slug_de",
+            "class": "foaf:Projekt",
+            "mappings": [
+                {
+                    "reference": "seo_title_de",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "ignore": true,
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "ignore": true,
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "slug_en",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "search_description_es",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "main_image_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "urls",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": null,
+                    "predicate": null,
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "seo_title_en",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "date",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_job",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_projekt|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_podcast.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "podcast",
+            "template": "slug_de",
+            "class": "fabio:AudioDocument",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "vimeo_link",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "date",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_podcast|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_post.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "post",
+            "template": "slug_de",
+            "class": "fabio:BlogPost",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "date",
+                    "predicate": "dct:created",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_post|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_pressemitteilung.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "pressemitteilung",
+            "template": "slug_de",
+            "class": "fabio:PressRelease",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "content_pressemitteilung|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_pressemitteilung|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "content_publikation.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "publikation",
+            "template": "slug_de",
+            "class": "dc:BibliographicResource",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "before_title",
+                    "predicate": "fabio:BibliographicMetadata",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "typ",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "language",
+                    "predicate": "dct:language",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "date",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "after_title",
+                    "predicate": "fabio:BibliographicMetadata",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "qualification",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "year",
+                    "predicate": "fabio:hasPublicationYear",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "is_print",
+                    "predicate": "fabio:PrintObject",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "is_open_access",
+                    "predicate": "dso:OpenAccess",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "is_digital",
+                    "predicate": "dc:PhysicalObject",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_publikation|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "public_content_ausstellung.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "ausstellung",
+            "template": "slug_de",
+            "class": "event:Event",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "public_content_ausstellung|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_ausstellung|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_ausstellung|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_ausstellung|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_ausstellung|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_ausstellung|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "public_content_category.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "category",
+            "template": "slug",
+            "class": "skos:Concept",
+            "mappings": [
+                {
+                    "reference": "parent_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "weight",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "id",
+                    "predicate": "dct:identifier",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "members",
+                    "predicate": "skos:broader",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "full_name",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "page_link",
+                    "predicate": "foaf:homepage",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "linkable",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||public_content_newsletter",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_job",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_category|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "public_content_event.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "event",
+            "template": "slug_de",
+            "class": "event:Event",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "public_content_event|||public_content_mitglied",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||public_content_newsletter",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||content_kooperation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_event|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "public_content_mitglied.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "mitglied",
+            "template": "slug_de",
+            "class": "foaf:Person",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "public_content_mitglied|||content_post",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "vcard_file_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_pressemitteilung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "links",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "schwerpunkt_category_id",
+                    "predicate": "vivo:hasResearchArea",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_nachwuchsfoerderung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||public_content_ausstellung",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_publikation",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_podcast",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "cv_file_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_projekt",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "telefonnummer",
+                    "predicate": "vcard:hasTelephone",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||content_job",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "email",
+                    "predicate": "vcard:hasEmail",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_mitglied|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "public_content_newsletter.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "newsletter",
+            "template": "slug_de",
+            "class": "fabio:NewsItem",
+            "mappings": [
+                {
+                    "parentTriplesMap": "ImageMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "parentTriplesMap": "FoerdererMapping",
+                    "joinCondition": {
+                        "enabled": false
+                    }
+                },
+                {
+                    "reference": "public_content_newsletter|||public_content_event",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "public_content_newsletter|||public_content_category",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "taggit_tag.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "tag",
+            "template": "slug",
+            "class": "skos:altLabel",
+            "mappings": [
+                {
+                    "reference": "slug",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "name",
+                    "predicate": "rdfs:label",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "wagtaildocs_document.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "document",
+            "template": "file",
+            "class": "foaf:Document",
+            "mappings": [
+                {
+                    "reference": "uploaded_by_user_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "created_at",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "file",
+                    "predicate": "rdf:about",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "wagtailembeds_embed.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "video",
+            "template": "url",
+            "class": "schema.org:VideoObject",
+            "mappings": [
+                {
+                    "reference": "width",
+                    "predicate": "schema:width",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "html",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "type",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "provider_name",
+                    "predicate": "dc:publisher",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "thumbnail_url",
+                    "predicate": "schema.org:image",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "author_name",
+                    "predicate": "dct:creator",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "height",
+                    "predicate": "schema:height",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "url",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "last_updated",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "max_width",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "wagtailimages_image.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "image",
+            "template": "id",
+            "class": "schema.org:ImageObject",
+            "mappings": [
+                {
+                    "reference": "focal_point_x",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "file_size",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "focal_point_width",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "height",
+                    "predicate": "schema:height",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "focal_point_height",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "uploaded_by_user_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "created_at",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "focal_point_y",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "file",
+                    "predicate": "schema.org:url",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "width",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "filename": "wagtailimages_rendition.json",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "image",
+            "template": "id",
+            "class": "schema.org:ImageObject",
+            "mappings": [
+                {
+                    "reference": "height",
+                    "predicate": "schema:height",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "image_id",
+                    "predicate": "prov:wasDerivedFrom",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "focal_point_key",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "filter_id",
+                    "predicate": null,
+                    "ignore": true,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "file",
+                    "predicate": "schema.org:url",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        }
+    ],
+    "globalmappings": [
+        {
+            "reference": "page_ptr_id",
+            "predicate": "dct:identifier",
+            "ignore": false,
+            "language": null,
+            "datatype": "xsd:int"
+        },
+        {
+            "reference": "body_de",
+            "predicate": "bio:biography",
+            "ignore": false,
+            "language": "de",
+            "datatype": null
+        },
+        {
+            "parentTriplesMap": "ImageMapping",
+            "predicate": "schema.org:image",
+            "class": "foaf:img",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "image",
+            "template": "main_image_id",
+            "mappings": [
+                {
+                    "reference": "main_image_caption",
+                    "predicate": "dc:description",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "main_image_caption_de",
+                    "predicate": "dc:description",
+                    "ignore": false,
+                    "language": "de",
+                    "datatype": null
+                },
+                {
+                    "reference": "main_image_caption_en",
+                    "predicate": "dc:description",
+                    "ignore": false,
+                    "language": "en",
+                    "datatype": null
+                },
+                {
+                    "reference": "main_image_caption_es",
+                    "predicate": "dc:description",
+                    "ignore": false,
+                    "language": "es",
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "parentTriplesMap": "FoerdererMapping",
+            "predicate": "schema.org:image",
+            "class": "schema:Organization",
+            "templatePrefix": "VAR_BASEURL",
+            "templatePath": "foerderer",
+            "template": "gefoerdert_durch_img_id",
+            "mappings": [
+                {
+                    "reference": "gefoerdert_durch_img_id",
+                    "predicate": "vcard:hasPhoto",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                }
+            ]
+        },
+        {
+            "reference": "search_description_de",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "slug_es",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "seo_title_es",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "image_carousel",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "url_path_de",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "active",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "search_description_en",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "slug_de",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "main_image_caption_en",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "body",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "title_es",
+            "predicate": "fabio:BibliographicMetadata",
+            "ignore": false,
+            "language": "de",
+            "datatype": null
+        },
+        {
+            "reference": "body_en",
+            "predicate": "fabio:BibliographicMetadata",
+            "ignore": false,
+            "language": "en",
+            "datatype": null
+        },
+        {
+            "reference": "featured",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "gefoerdert_durch_img_id",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "url_path_en",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "main_image_caption_es",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "url_path_es",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "main_image_caption",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "filename",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "main_image_caption_de",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "title_de",
+            "predicate": "dct:title",
+            "ignore": false,
+            "language": "de",
+            "datatype": null
+        },
+        {
+            "reference": "body_es",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": "es",
+            "datatype": null
+        },
+        {
+            "reference": "title_en",
+            "predicate": "dct:title",
+            "ignore": false,
+            "language": "en",
+            "datatype": null
+        },
+        {
+            "reference": "urls",
+            "predicate": "fabio:externalLink",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "categories",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "slug_en",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "seo_title_en",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "seo_title_de",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "main_image_id",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "search_description_es",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "null",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "date",
+            "predicate": "dct:created",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "location_address",
+            "predicate": "event:place",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "location_address2",
+            "predicate": "event:place",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "end_date",
+            "predicate": "timeline:endsAtDateTime",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "location_title",
+            "predicate": "event:place",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "start_date",
+            "predicate": "timeline:beginsAtDateTime",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "slug",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "description",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "title",
+            "predicate": "dct:title",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "description_de",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": "de",
+            "datatype": null
+        },
+        {
+            "reference": "description_es",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": "es",
+            "datatype": null
+        },
+        {
+            "reference": "description_en",
+            "predicate": "dct:description",
+            "ignore": false,
+            "language": "en",
+            "datatype": null
+        },
+        {
+            "reference": "id",
+            "predicate": "dct:identifier",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "width",
+            "predicate": "schema:width",
+            "ignore": false,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": "public_content_category",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        }
+    ]
+}

@@ -1,0 +1,560 @@
+[
+    {
+        "id": "1",
+        "name": "Abschlusspr\u00e4sentation",
+        "slug": "abschlussprasentation",
+        "urls": ""
+    },
+    {
+        "id": "2",
+        "name": "x-rays",
+        "slug": "x-rays",
+        "urls": ""
+    },
+    {
+        "id": "3",
+        "name": "shutter",
+        "slug": "shutter",
+        "urls": ""
+    },
+    {
+        "id": "4",
+        "name": "R\u00fcckseite",
+        "slug": "ruckseite",
+        "urls": ""
+    },
+    {
+        "id": "5",
+        "name": "Epistemische",
+        "slug": "epistemische",
+        "urls": ""
+    },
+    {
+        "id": "6",
+        "name": "Bildakt",
+        "slug": "bildakt",
+        "urls": ""
+    },
+    {
+        "id": "7",
+        "name": "K\u00f6rperwissen",
+        "slug": "korperwissen",
+        "urls": ""
+    },
+    {
+        "id": "8",
+        "name": "3D",
+        "slug": "3d",
+        "urls": ""
+    },
+    {
+        "id": "9",
+        "name": "Strukturwissenschaft",
+        "slug": "strukturwissenschaft",
+        "urls": ""
+    },
+    {
+        "id": "10",
+        "name": "Gamelab",
+        "slug": "gamelab",
+        "urls": ""
+    },
+    {
+        "id": "11",
+        "name": "Analogspeicher",
+        "slug": "analogspeicher",
+        "urls": ""
+    },
+    {
+        "id": "12",
+        "name": "Patienten",
+        "slug": "patienten",
+        "urls": ""
+    },
+    {
+        "id": "13",
+        "name": "Jahrestagung",
+        "slug": "jahrestagung",
+        "urls": ""
+    },
+    {
+        "id": "14",
+        "name": "Klang",
+        "slug": "klang",
+        "urls": ""
+    },
+    {
+        "id": "15",
+        "name": "Logo",
+        "slug": "logo",
+        "urls": ""
+    },
+    {
+        "id": "16",
+        "name": "KlangSehen",
+        "slug": "klangsehen",
+        "urls": ""
+    },
+    {
+        "id": "17",
+        "name": "Insekten",
+        "slug": "insekten",
+        "urls": ""
+    },
+    {
+        "id": "18",
+        "name": "Code",
+        "slug": "code",
+        "urls": ""
+    },
+    {
+        "id": "19",
+        "name": "Form",
+        "slug": "form",
+        "urls": ""
+    },
+    {
+        "id": "20",
+        "name": "Milieu",
+        "slug": "milieu",
+        "urls": ""
+    },
+    {
+        "id": "21",
+        "name": "Juste",
+        "slug": "juste",
+        "urls": ""
+    },
+    {
+        "id": "22",
+        "name": "Gender",
+        "slug": "gender",
+        "urls": ""
+    },
+    {
+        "id": "23",
+        "name": "de",
+        "slug": "de",
+        "urls": ""
+    },
+    {
+        "id": "24",
+        "name": "Gestaltung",
+        "slug": "gestaltung",
+        "urls": ""
+    },
+    {
+        "id": "25",
+        "name": "Flohkrebs",
+        "slug": "flohkrebs",
+        "urls": ""
+    },
+    {
+        "id": "26",
+        "name": "Zellteilung",
+        "slug": "zellteilung",
+        "urls": ""
+    },
+    {
+        "id": "27",
+        "name": "Zelle",
+        "slug": "zelle",
+        "urls": ""
+    },
+    {
+        "id": "28",
+        "name": "Labor",
+        "slug": "labor",
+        "urls": ""
+    },
+    {
+        "id": "29",
+        "name": "Gesundheit",
+        "slug": "gesundheit",
+        "urls": ""
+    },
+    {
+        "id": "30",
+        "name": "Krebse",
+        "slug": "krebse",
+        "urls": ""
+    },
+    {
+        "id": "31",
+        "name": "Reale",
+        "slug": "reale",
+        "urls": ""
+    },
+    {
+        "id": "32",
+        "name": "Virtuelle",
+        "slug": "virtuelle",
+        "urls": ""
+    },
+    {
+        "id": "33",
+        "name": "Architektur",
+        "slug": "architektur",
+        "urls": ""
+    },
+    {
+        "id": "34",
+        "name": "Wurm",
+        "slug": "wurm",
+        "urls": ""
+    },
+    {
+        "id": "35",
+        "name": "Humboldt",
+        "slug": "humboldt",
+        "urls": ""
+    },
+    {
+        "id": "36",
+        "name": "Papagei",
+        "slug": "papagei",
+        "urls": ""
+    },
+    {
+        "id": "37",
+        "name": "U-Boot-Bunker",
+        "slug": "u-boot-bunker",
+        "urls": ""
+    },
+    {
+        "id": "38",
+        "name": "Modell",
+        "slug": "modell",
+        "urls": ""
+    },
+    {
+        "id": "39",
+        "name": "Mond",
+        "slug": "mond",
+        "urls": ""
+    },
+    {
+        "id": "40",
+        "name": "Leguan",
+        "slug": "leguan",
+        "urls": ""
+    },
+    {
+        "id": "41",
+        "name": "Skelett",
+        "slug": "skelett",
+        "urls": ""
+    },
+    {
+        "id": "42",
+        "name": "Piktogramme",
+        "slug": "piktogramme",
+        "urls": ""
+    },
+    {
+        "id": "43",
+        "name": "Sammlungen",
+        "slug": "sammlungen",
+        "urls": ""
+    },
+    {
+        "id": "44",
+        "name": "Selbstbewegend",
+        "slug": "selbstbewegend",
+        "urls": ""
+    },
+    {
+        "id": "45",
+        "name": "dessau",
+        "slug": "dessau",
+        "urls": ""
+    },
+    {
+        "id": "46",
+        "name": "2014",
+        "slug": "2014",
+        "urls": ""
+    },
+    {
+        "id": "47",
+        "name": "Design",
+        "slug": "design",
+        "urls": ""
+    },
+    {
+        "id": "48",
+        "name": "Open",
+        "slug": "open",
+        "urls": ""
+    },
+    {
+        "id": "49",
+        "name": "Promotionsprogramm",
+        "slug": "promotionsprogramm",
+        "urls": ""
+    },
+    {
+        "id": "50",
+        "name": "Themenklasse",
+        "slug": "themenklasse",
+        "urls": ""
+    },
+    {
+        "id": "51",
+        "name": "Schering",
+        "slug": "schering",
+        "urls": ""
+    },
+    {
+        "id": "52",
+        "name": "Themenklasse2014",
+        "slug": "themenklasse2014",
+        "urls": ""
+    },
+    {
+        "id": "53",
+        "name": "Datenmodell",
+        "slug": "datenmodell",
+        "urls": ""
+    },
+    {
+        "id": "54",
+        "name": "Things",
+        "slug": "things",
+        "urls": ""
+    },
+    {
+        "id": "55",
+        "name": "Knowing",
+        "slug": "knowing",
+        "urls": ""
+    },
+    {
+        "id": "56",
+        "name": "Argentinien",
+        "slug": "argentinien",
+        "urls": ""
+    },
+    {
+        "id": "57",
+        "name": "Bildgenese",
+        "slug": "bildgenese",
+        "urls": ""
+    },
+    {
+        "id": "58",
+        "name": "Nacht",
+        "slug": "nacht",
+        "urls": ""
+    },
+    {
+        "id": "59",
+        "name": "Schallplatte",
+        "slug": "schallplatte",
+        "urls": ""
+    },
+    {
+        "id": "60",
+        "name": "Programm",
+        "slug": "programm",
+        "urls": ""
+    },
+    {
+        "id": "61",
+        "name": "Visuelle Zeitgestaltung",
+        "slug": "visuelle-zeitgestaltung",
+        "urls": ""
+    },
+    {
+        "id": "62",
+        "name": "lautarchiv",
+        "slug": "lautarchiv",
+        "urls": ""
+    },
+    {
+        "id": "63",
+        "name": "tat",
+        "slug": "tat",
+        "urls": ""
+    },
+    {
+        "id": "64",
+        "name": "Lehrangebot",
+        "slug": "lehrangebot",
+        "urls": ""
+    },
+    {
+        "id": "65",
+        "name": "Steckspiel, Foto: Manfred Zoller",
+        "slug": "steckspiel-foto-manfred-zoller",
+        "urls": ""
+    },
+    {
+        "id": "66",
+        "name": "schwarz",
+        "slug": "schwarz",
+        "urls": ""
+    },
+    {
+        "id": "67",
+        "name": "LogoDFG",
+        "slug": "logodfg",
+        "urls": ""
+    },
+    {
+        "id": "69",
+        "name": "gestaltung",
+        "slug": "gestaltung_1",
+        "urls": ""
+    },
+    {
+        "id": "70",
+        "name": "+ultra",
+        "slug": "ultra",
+        "urls": ""
+    },
+    {
+        "id": "71",
+        "name": "wissen",
+        "slug": "wissen",
+        "urls": ""
+    },
+    {
+        "id": "72",
+        "name": "Indien",
+        "slug": "indien",
+        "urls": ""
+    },
+    {
+        "id": "74",
+        "name": "OPEN",
+        "slug": "open_1",
+        "urls": ""
+    },
+    {
+        "id": "75",
+        "name": "Profil",
+        "slug": "profil",
+        "urls": ""
+    },
+    {
+        "id": "76",
+        "name": "Tieranatomisches",
+        "slug": "tieranatomisches",
+        "urls": ""
+    },
+    {
+        "id": "77",
+        "name": "Theater",
+        "slug": "theater",
+        "urls": ""
+    },
+    {
+        "id": "78",
+        "name": "Lageplan",
+        "slug": "lageplan",
+        "urls": ""
+    },
+    {
+        "id": "79",
+        "name": "WIWEX",
+        "slug": "wiwex",
+        "urls": ""
+    },
+    {
+        "id": "80",
+        "name": "Buchungsformular",
+        "slug": "buchungsformular",
+        "urls": ""
+    },
+    {
+        "id": "81",
+        "name": "GESTALTEN!",
+        "slug": "gestalten",
+        "urls": ""
+    },
+    {
+        "id": "82",
+        "name": "ANATOMIE",
+        "slug": "anatomie",
+        "urls": ""
+    },
+    {
+        "id": "83",
+        "name": "Wissenschaftsgarten",
+        "slug": "wissenschaftsgarten",
+        "urls": ""
+    },
+    {
+        "id": "84",
+        "name": "Arboretrum",
+        "slug": "arboretrum",
+        "urls": ""
+    },
+    {
+        "id": "85",
+        "name": "Naturf\u00fchrer",
+        "slug": "naturfuhrer",
+        "urls": ""
+    },
+    {
+        "id": "86",
+        "name": "Campus",
+        "slug": "campus",
+        "urls": ""
+    },
+    {
+        "id": "87",
+        "name": "Nord",
+        "slug": "nord",
+        "urls": ""
+    },
+    {
+        "id": "88",
+        "name": "Baumtabak",
+        "slug": "baumtabak",
+        "urls": ""
+    },
+    {
+        "id": "89",
+        "name": "MuseumsSommer",
+        "slug": "museumssommer",
+        "urls": ""
+    },
+    {
+        "id": "90",
+        "name": "Herbarbeleg",
+        "slug": "herbarbeleg",
+        "urls": ""
+    },
+    {
+        "id": "91",
+        "name": "Orobates",
+        "slug": "orobates",
+        "urls": ""
+    },
+    {
+        "id": "92",
+        "name": "HZK",
+        "slug": "hzk",
+        "urls": ""
+    },
+    {
+        "id": "93",
+        "name": "WiSe",
+        "slug": "wise",
+        "urls": ""
+    },
+    {
+        "id": "94",
+        "name": "2016/17",
+        "slug": "201617",
+        "urls": ""
+    },
+    {
+        "id": "95",
+        "name": "Vorlesungsverzeichnis",
+        "slug": "vorlesungsverzeichnis",
+        "urls": ""
+    }
+]
