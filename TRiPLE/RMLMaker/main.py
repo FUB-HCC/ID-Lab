@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-15 -*-
 import jsonhelper
 from model.filePTM import FilePTM
 import model.file as File
@@ -68,7 +69,7 @@ class Main:
                         else:
                             data["template"] = input("Template (example.com/project/IDENTIFIER (eg. slug_de):"),
 
-                        if (input("With Image/Förderer Mappings?:") == "y"):
+                        if (input("With Image/Foerderer Mappings?:") == "y"):
                             data["mappings"] = [
                                 {
                                     "parentTriplesMap": "ImageMapping"

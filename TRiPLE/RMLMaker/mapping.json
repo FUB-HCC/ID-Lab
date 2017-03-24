@@ -1418,7 +1418,7 @@
                 },
                 {
                     "reference": "file",
-                    "predicate": "rdf:about",
+                    "predicate": "schema.org:url",
                     "ignore": false,
                     "language": null,
                     "datatype": null

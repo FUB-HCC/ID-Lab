@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-15 -*-
 import os
 import sys
 from model.rml_mapping import RMLMapping
@@ -46,7 +47,7 @@ class File:
 
 
     def loadglobalMapping(self, globalmappings):
-        for key in globalmappings.keys(): # läd alles rein, stuss
+        for key in globalmappings.keys(): # loed alles rein, stuss
             if not key in self.ownMappings and not isinstance(globalmappings[key],FilePTM): # Priority for local mappings
                     self.allMappings[key] = globalmappings[key]
 
