@@ -1,4 +1,4 @@
-#TRiPLE - To RDF PipelinE
+# TRiPLE - To RDF PipelinE
 
 TRiPLE is a number of tools to clean an convert CSV data to RDF. It is specifically designed to handle the BWG data.
 
