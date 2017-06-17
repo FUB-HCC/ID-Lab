@@ -1,4 +1,4 @@
-#RMLMaker
+# RMLMaker
 Tool to create RML from json files.
 Features:
 
@@ -8,7 +8,7 @@ Features:
 - Parent triples map
 - Template generation for cyclic data
 
-###Usage
+### Usage
 ```
 python3 main.py -s sourceFolder/ -m mapping.json -o results.rml.ttl
 ``` 
