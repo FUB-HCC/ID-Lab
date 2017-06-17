@@ -1,0 +1,3 @@
+[submodule "TRiPLE/RML-Mapper"]
+	path = TRiPLE/RML-Mapper
+	url = https://github.com/RMLio/RML-Mapper

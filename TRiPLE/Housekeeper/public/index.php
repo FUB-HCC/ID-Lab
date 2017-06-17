@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ERROR | E_PARSE);
 // Silex app
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -14,7 +14,7 @@ include "plugins.php";
 $DELIMITER = ","; // used in csv
 $MODULES =  [module_removeHTML,module_replaceAmpersandsAndDohtmlspecialchars, module_removeLineBreaks, module_utf8_for_xml]; // all functions are applied on all fields
 $PLUGINS = [plugin_makeBoolean(["active"])];
-$DEBUG = true;
+$DEBUG = false;
 
 
 // Setup app

@@ -2,559 +2,466 @@
     {
         "id": "1",
         "name": "Abschlusspr\u00e4sentation",
-        "slug": "abschlussprasentation",
-        "urls": ""
+        "slug": "abschlussprasentation"
     },
     {
         "id": "2",
         "name": "x-rays",
-        "slug": "x-rays",
-        "urls": ""
+        "slug": "x-rays"
     },
     {
         "id": "3",
         "name": "shutter",
-        "slug": "shutter",
-        "urls": ""
+        "slug": "shutter"
     },
     {
         "id": "4",
         "name": "R\u00fcckseite",
-        "slug": "ruckseite",
-        "urls": ""
+        "slug": "ruckseite"
     },
     {
         "id": "5",
         "name": "Epistemische",
-        "slug": "epistemische",
-        "urls": ""
+        "slug": "epistemische"
     },
     {
         "id": "6",
         "name": "Bildakt",
-        "slug": "bildakt",
-        "urls": ""
+        "slug": "bildakt"
     },
     {
         "id": "7",
         "name": "K\u00f6rperwissen",
-        "slug": "korperwissen",
-        "urls": ""
+        "slug": "korperwissen"
     },
     {
         "id": "8",
         "name": "3D",
-        "slug": "3d",
-        "urls": ""
+        "slug": "3d"
     },
     {
         "id": "9",
         "name": "Strukturwissenschaft",
-        "slug": "strukturwissenschaft",
-        "urls": ""
+        "slug": "strukturwissenschaft"
     },
     {
         "id": "10",
         "name": "Gamelab",
-        "slug": "gamelab",
-        "urls": ""
+        "slug": "gamelab"
     },
     {
         "id": "11",
         "name": "Analogspeicher",
-        "slug": "analogspeicher",
-        "urls": ""
+        "slug": "analogspeicher"
     },
     {
         "id": "12",
         "name": "Patienten",
-        "slug": "patienten",
-        "urls": ""
+        "slug": "patienten"
     },
     {
         "id": "13",
         "name": "Jahrestagung",
-        "slug": "jahrestagung",
-        "urls": ""
+        "slug": "jahrestagung"
     },
     {
         "id": "14",
         "name": "Klang",
-        "slug": "klang",
-        "urls": ""
+        "slug": "klang"
     },
     {
         "id": "15",
         "name": "Logo",
-        "slug": "logo",
-        "urls": ""
+        "slug": "logo"
     },
     {
         "id": "16",
         "name": "KlangSehen",
-        "slug": "klangsehen",
-        "urls": ""
+        "slug": "klangsehen"
     },
     {
         "id": "17",
         "name": "Insekten",
-        "slug": "insekten",
-        "urls": ""
+        "slug": "insekten"
     },
     {
         "id": "18",
         "name": "Code",
-        "slug": "code",
-        "urls": ""
+        "slug": "code"
     },
     {
         "id": "19",
         "name": "Form",
-        "slug": "form",
-        "urls": ""
+        "slug": "form"
     },
     {
         "id": "20",
         "name": "Milieu",
-        "slug": "milieu",
-        "urls": ""
+        "slug": "milieu"
     },
     {
         "id": "21",
         "name": "Juste",
-        "slug": "juste",
-        "urls": ""
+        "slug": "juste"
     },
     {
         "id": "22",
         "name": "Gender",
-        "slug": "gender",
-        "urls": ""
+        "slug": "gender"
     },
     {
         "id": "23",
         "name": "de",
-        "slug": "de",
-        "urls": ""
+        "slug": "de"
     },
     {
         "id": "24",
         "name": "Gestaltung",
-        "slug": "gestaltung",
-        "urls": ""
+        "slug": "gestaltung"
     },
     {
         "id": "25",
         "name": "Flohkrebs",
-        "slug": "flohkrebs",
-        "urls": ""
+        "slug": "flohkrebs"
     },
     {
         "id": "26",
         "name": "Zellteilung",
-        "slug": "zellteilung",
-        "urls": ""
+        "slug": "zellteilung"
     },
     {
         "id": "27",
         "name": "Zelle",
-        "slug": "zelle",
-        "urls": ""
+        "slug": "zelle"
     },
     {
         "id": "28",
         "name": "Labor",
-        "slug": "labor",
-        "urls": ""
+        "slug": "labor"
     },
     {
         "id": "29",
         "name": "Gesundheit",
-        "slug": "gesundheit",
-        "urls": ""
+        "slug": "gesundheit"
     },
     {
         "id": "30",
         "name": "Krebse",
-        "slug": "krebse",
-        "urls": ""
+        "slug": "krebse"
     },
     {
         "id": "31",
         "name": "Reale",
-        "slug": "reale",
-        "urls": ""
+        "slug": "reale"
     },
     {
         "id": "32",
         "name": "Virtuelle",
-        "slug": "virtuelle",
-        "urls": ""
+        "slug": "virtuelle"
     },
     {
         "id": "33",
         "name": "Architektur",
-        "slug": "architektur",
-        "urls": ""
+        "slug": "architektur"
     },
     {
         "id": "34",
         "name": "Wurm",
-        "slug": "wurm",
-        "urls": ""
+        "slug": "wurm"
     },
     {
         "id": "35",
         "name": "Humboldt",
-        "slug": "humboldt",
-        "urls": ""
+        "slug": "humboldt"
     },
     {
         "id": "36",
         "name": "Papagei",
-        "slug": "papagei",
-        "urls": ""
+        "slug": "papagei"
     },
     {
         "id": "37",
         "name": "U-Boot-Bunker",
-        "slug": "u-boot-bunker",
-        "urls": ""
+        "slug": "u-boot-bunker"
     },
     {
         "id": "38",
         "name": "Modell",
-        "slug": "modell",
-        "urls": ""
+        "slug": "modell"
     },
     {
         "id": "39",
         "name": "Mond",
-        "slug": "mond",
-        "urls": ""
+        "slug": "mond"
     },
     {
         "id": "40",
         "name": "Leguan",
-        "slug": "leguan",
-        "urls": ""
+        "slug": "leguan"
     },
     {
         "id": "41",
         "name": "Skelett",
-        "slug": "skelett",
-        "urls": ""
+        "slug": "skelett"
     },
     {
         "id": "42",
         "name": "Piktogramme",
-        "slug": "piktogramme",
-        "urls": ""
+        "slug": "piktogramme"
     },
     {
         "id": "43",
         "name": "Sammlungen",
-        "slug": "sammlungen",
-        "urls": ""
+        "slug": "sammlungen"
     },
     {
         "id": "44",
         "name": "Selbstbewegend",
-        "slug": "selbstbewegend",
-        "urls": ""
+        "slug": "selbstbewegend"
     },
     {
         "id": "45",
         "name": "dessau",
-        "slug": "dessau",
-        "urls": ""
+        "slug": "dessau"
     },
     {
         "id": "46",
         "name": "2014",
-        "slug": "2014",
-        "urls": ""
+        "slug": "2014"
     },
     {
         "id": "47",
         "name": "Design",
-        "slug": "design",
-        "urls": ""
+        "slug": "design"
     },
     {
         "id": "48",
         "name": "Open",
-        "slug": "open",
-        "urls": ""
+        "slug": "open"
     },
     {
         "id": "49",
         "name": "Promotionsprogramm",
-        "slug": "promotionsprogramm",
-        "urls": ""
+        "slug": "promotionsprogramm"
     },
     {
         "id": "50",
         "name": "Themenklasse",
-        "slug": "themenklasse",
-        "urls": ""
+        "slug": "themenklasse"
     },
     {
         "id": "51",
         "name": "Schering",
-        "slug": "schering",
-        "urls": ""
+        "slug": "schering"
     },
     {
         "id": "52",
         "name": "Themenklasse2014",
-        "slug": "themenklasse2014",
-        "urls": ""
+        "slug": "themenklasse2014"
     },
     {
         "id": "53",
         "name": "Datenmodell",
-        "slug": "datenmodell",
-        "urls": ""
+        "slug": "datenmodell"
     },
     {
         "id": "54",
         "name": "Things",
-        "slug": "things",
-        "urls": ""
+        "slug": "things"
     },
     {
         "id": "55",
         "name": "Knowing",
-        "slug": "knowing",
-        "urls": ""
+        "slug": "knowing"
     },
     {
         "id": "56",
         "name": "Argentinien",
-        "slug": "argentinien",
-        "urls": ""
+        "slug": "argentinien"
     },
     {
         "id": "57",
         "name": "Bildgenese",
-        "slug": "bildgenese",
-        "urls": ""
+        "slug": "bildgenese"
     },
     {
         "id": "58",
         "name": "Nacht",
-        "slug": "nacht",
-        "urls": ""
+        "slug": "nacht"
     },
     {
         "id": "59",
         "name": "Schallplatte",
-        "slug": "schallplatte",
-        "urls": ""
+        "slug": "schallplatte"
     },
     {
         "id": "60",
         "name": "Programm",
-        "slug": "programm",
-        "urls": ""
+        "slug": "programm"
     },
     {
         "id": "61",
         "name": "Visuelle Zeitgestaltung",
-        "slug": "visuelle-zeitgestaltung",
-        "urls": ""
+        "slug": "visuelle-zeitgestaltung"
     },
     {
         "id": "62",
         "name": "lautarchiv",
-        "slug": "lautarchiv",
-        "urls": ""
+        "slug": "lautarchiv"
     },
     {
         "id": "63",
         "name": "tat",
-        "slug": "tat",
-        "urls": ""
+        "slug": "tat"
     },
     {
         "id": "64",
         "name": "Lehrangebot",
-        "slug": "lehrangebot",
-        "urls": ""
+        "slug": "lehrangebot"
     },
     {
         "id": "65",
         "name": "Steckspiel, Foto: Manfred Zoller",
-        "slug": "steckspiel-foto-manfred-zoller",
-        "urls": ""
+        "slug": "steckspiel-foto-manfred-zoller"
     },
     {
         "id": "66",
         "name": "schwarz",
-        "slug": "schwarz",
-        "urls": ""
+        "slug": "schwarz"
     },
     {
         "id": "67",
         "name": "LogoDFG",
-        "slug": "logodfg",
-        "urls": ""
+        "slug": "logodfg"
     },
     {
         "id": "69",
         "name": "gestaltung",
-        "slug": "gestaltung_1",
-        "urls": ""
+        "slug": "gestaltung_1"
     },
     {
         "id": "70",
         "name": "+ultra",
-        "slug": "ultra",
-        "urls": ""
+        "slug": "ultra"
     },
     {
         "id": "71",
         "name": "wissen",
-        "slug": "wissen",
-        "urls": ""
+        "slug": "wissen"
     },
     {
         "id": "72",
         "name": "Indien",
-        "slug": "indien",
-        "urls": ""
+        "slug": "indien"
     },
     {
         "id": "74",
         "name": "OPEN",
-        "slug": "open_1",
-        "urls": ""
+        "slug": "open_1"
     },
     {
         "id": "75",
         "name": "Profil",
-        "slug": "profil",
-        "urls": ""
+        "slug": "profil"
     },
     {
         "id": "76",
         "name": "Tieranatomisches",
-        "slug": "tieranatomisches",
-        "urls": ""
+        "slug": "tieranatomisches"
     },
     {
         "id": "77",
         "name": "Theater",
-        "slug": "theater",
-        "urls": ""
+        "slug": "theater"
     },
     {
         "id": "78",
         "name": "Lageplan",
-        "slug": "lageplan",
-        "urls": ""
+        "slug": "lageplan"
     },
     {
         "id": "79",
         "name": "WIWEX",
-        "slug": "wiwex",
-        "urls": ""
+        "slug": "wiwex"
     },
     {
         "id": "80",
         "name": "Buchungsformular",
-        "slug": "buchungsformular",
-        "urls": ""
+        "slug": "buchungsformular"
     },
     {
         "id": "81",
         "name": "GESTALTEN!",
-        "slug": "gestalten",
-        "urls": ""
+        "slug": "gestalten"
     },
     {
         "id": "82",
         "name": "ANATOMIE",
-        "slug": "anatomie",
-        "urls": ""
+        "slug": "anatomie"
     },
     {
         "id": "83",
         "name": "Wissenschaftsgarten",
-        "slug": "wissenschaftsgarten",
-        "urls": ""
+        "slug": "wissenschaftsgarten"
     },
     {
         "id": "84",
         "name": "Arboretrum",
-        "slug": "arboretrum",
-        "urls": ""
+        "slug": "arboretrum"
     },
     {
         "id": "85",
         "name": "Naturf\u00fchrer",
-        "slug": "naturfuhrer",
-        "urls": ""
+        "slug": "naturfuhrer"
     },
     {
         "id": "86",
         "name": "Campus",
-        "slug": "campus",
-        "urls": ""
+        "slug": "campus"
     },
     {
         "id": "87",
         "name": "Nord",
-        "slug": "nord",
-        "urls": ""
+        "slug": "nord"
     },
     {
         "id": "88",
         "name": "Baumtabak",
-        "slug": "baumtabak",
-        "urls": ""
+        "slug": "baumtabak"
     },
     {
         "id": "89",
         "name": "MuseumsSommer",
-        "slug": "museumssommer",
-        "urls": ""
+        "slug": "museumssommer"
     },
     {
         "id": "90",
         "name": "Herbarbeleg",
-        "slug": "herbarbeleg",
-        "urls": ""
+        "slug": "herbarbeleg"
     },
     {
         "id": "91",
         "name": "Orobates",
-        "slug": "orobates",
-        "urls": ""
+        "slug": "orobates"
     },
     {
         "id": "92",
         "name": "HZK",
-        "slug": "hzk",
-        "urls": ""
+        "slug": "hzk"
     },
     {
         "id": "93",
         "name": "WiSe",
-        "slug": "wise",
-        "urls": ""
+        "slug": "wise"
     },
     {
         "id": "94",
         "name": "2016/17",
-        "slug": "201617",
-        "urls": ""
+        "slug": "201617"
     },
     {
         "id": "95",
         "name": "Vorlesungsverzeichnis",
-        "slug": "vorlesungsverzeichnis",
-        "urls": ""
+        "slug": "vorlesungsverzeichnis"
     }
 ]

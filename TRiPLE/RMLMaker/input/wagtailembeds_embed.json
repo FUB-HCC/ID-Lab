@@ -11,8 +11,7 @@
         "thumbnail_url": "https://i.vimeocdn.com/video/446425709_640.jpg",
         "width": "640",
         "height": "360",
-        "last_updated": "2016-07-06 12:00:17.633135+02",
-        "urls": "https://vimeo.com/72477323 https://player.vimeo.com/video/72477323 https://i.vimeocdn.com/video/446425709_640.jpg https://vimeo.com/72477323 https://player.vimeo.com/video/72477323 https://i.vimeocdn.com/video/446425709_640.jpg"
+        "last_updated": "2016-07-06 12:00:17.633135+02"
     },
     {
         "id": "2",
@@ -26,8 +25,7 @@
         "thumbnail_url": "https://i.vimeocdn.com/video/580239436_640.jpg",
         "width": "640",
         "height": "360",
-        "last_updated": "2016-07-07 13:46:41.070995+02",
-        "urls": "https://vimeo.com/173746465 https://player.vimeo.com/video/173746465 https://i.vimeocdn.com/video/580239436_640.jpg https://vimeo.com/173746465 https://player.vimeo.com/video/173746465 https://i.vimeocdn.com/video/580239436_640.jpg"
+        "last_updated": "2016-07-07 13:46:41.070995+02"
     },
     {
         "id": "3",
@@ -41,8 +39,7 @@
         "thumbnail_url": "https://i.ytimg.com/vi/_UBda3Ocys0/hqdefault.jpg",
         "width": "480",
         "height": "270",
-        "last_updated": "2016-07-14 11:25:46.251868+02",
-        "urls": "https://www.youtube.com/watch?v=_UBda3Ocys0 https://www.youtube.com/embed/_UBda3Ocys0?feature=oembed https://i.ytimg.com/vi/_UBda3Ocys0/hqdefault.jpg https://www.youtube.com/watch?v=_UBda3Ocys0 https://www.youtube.com/embed/_UBda3Ocys0?feature=oembed https://i.ytimg.com/vi/_UBda3Ocys0/hqdefault.jpg"
+        "last_updated": "2016-07-14 11:25:46.251868+02"
     },
     {
         "id": "4",
@@ -56,8 +53,7 @@
         "thumbnail_url": "https://i.ytimg.com/vi/U2IlP5Lt6Mg/hqdefault.jpg",
         "width": "480",
         "height": "270",
-        "last_updated": "2016-07-14 11:43:22.822816+02",
-        "urls": "https://www.youtube.com/watch?v=U2IlP5Lt6Mg https://www.youtube.com/embed/U2IlP5Lt6Mg?feature=oembed https://i.ytimg.com/vi/U2IlP5Lt6Mg/hqdefault.jpg https://www.youtube.com/watch?v=U2IlP5Lt6Mg https://www.youtube.com/embed/U2IlP5Lt6Mg?feature=oembed https://i.ytimg.com/vi/U2IlP5Lt6Mg/hqdefault.jpg"
+        "last_updated": "2016-07-14 11:43:22.822816+02"
     },
     {
         "id": "5",
@@ -71,8 +67,7 @@
         "thumbnail_url": "https://i.ytimg.com/vi/ytbiqJL_UT0/hqdefault.jpg",
         "width": "480",
         "height": "270",
-        "last_updated": "2016-07-14 12:08:29.284245+02",
-        "urls": "https://www.youtube.com/watch?v=ytbiqJL_UT0 https://www.youtube.com/embed/ytbiqJL_UT0?feature=oembed https://i.ytimg.com/vi/ytbiqJL_UT0/hqdefault.jpg https://www.youtube.com/watch?v=ytbiqJL_UT0 https://www.youtube.com/embed/ytbiqJL_UT0?feature=oembed https://i.ytimg.com/vi/ytbiqJL_UT0/hqdefault.jpg"
+        "last_updated": "2016-07-14 12:08:29.284245+02"
     },
     {
         "id": "6",
@@ -86,8 +81,7 @@
         "thumbnail_url": "https://i.ytimg.com/vi/A7Ok3R3paR0/hqdefault.jpg",
         "width": "480",
         "height": "270",
-        "last_updated": "2016-07-14 12:10:28.92804+02",
-        "urls": "https://www.youtube.com/watch?v=A7Ok3R3paR0 https://www.youtube.com/embed/A7Ok3R3paR0?feature=oembed https://i.ytimg.com/vi/A7Ok3R3paR0/hqdefault.jpg https://www.youtube.com/watch?v=A7Ok3R3paR0 https://www.youtube.com/embed/A7Ok3R3paR0?feature=oembed https://i.ytimg.com/vi/A7Ok3R3paR0/hqdefault.jpg"
+        "last_updated": "2016-07-14 12:10:28.92804+02"
     },
     {
         "id": "7",
@@ -101,7 +95,6 @@
         "thumbnail_url": "https://i.ytimg.com/vi/Y5UFEkrpFIo/hqdefault.jpg",
         "width": "480",
         "height": "270",
-        "last_updated": "2016-07-14 15:22:03.716141+02",
-        "urls": "https://www.youtube.com/watch?v=Y5UFEkrpFIo https://www.youtube.com/embed/Y5UFEkrpFIo?feature=oembed https://i.ytimg.com/vi/Y5UFEkrpFIo/hqdefault.jpg https://www.youtube.com/watch?v=Y5UFEkrpFIo https://www.youtube.com/embed/Y5UFEkrpFIo?feature=oembed https://i.ytimg.com/vi/Y5UFEkrpFIo/hqdefault.jpg"
+        "last_updated": "2016-07-14 15:22:03.716141+02"
     }
 ]

@@ -1,4 +1,6 @@
 # -*- coding: iso-8859-15 -*-
+import argparse
+
 import jsonhelper
 from model.filePTM import FilePTM
 import model.file as File
@@ -17,9 +19,8 @@ class Main:
         self.files = {}
         self.workplace = {}
         self.globalmappings = {}
-        self.inputfolder = self.mapping["folder"]
+        self.inputfolder = settings["source"]
         self.prefixes = set([])
-        self.rmlLocation = "../RML-Mapper/"
         # Load variables
         self.variables = {}
         for var in self.mapping["variables"]:
@@ -44,7 +45,7 @@ class Main:
 
 
         # Generate File Mappings
-        if settings["fileChecks"]:
+        if settings["fileChecks"] == 1 or settings["fileChecks"] == True:
             allFiles = self.allfileswithfiletype(self.inputfolder, ".json");
             addedFile = False
             for f in allFiles:
@@ -88,7 +89,7 @@ class Main:
             self.files[file["filename"]] = File.File(file, self.inputfolder, self.globalmappings, self.variables, self)
 
     # Check all mappings
-        if settings["mappingChecks"]:
+        if settings["mappingChecks"] == 1 or settings["mappingChecks"] == True:
             for file in self.files.values():
                 file.checkMappings(self.files,self.slugs)
 
@@ -143,18 +144,27 @@ class Main:
         #save
         jsonhelper.savejson(self.mappingfile, output)
 
-if len(sys.argv) == 1:
-    print("""Running RMLMaker using mapping file mapping.json and outputting to output.rml.ttl""")
-    settings = {
-        "mappingChecks" : True,
-        "fileChecks" : True
-    }
-    main = Main("mapping.json", settings=settings)
-    main.writeAll()
-    print("Finished.")
-else:
-    main = Main(sys.argv[1])
-    main.writeAll()
+
+# Getting arguments
+parser = argparse.ArgumentParser(description='This is the RMLMaker.')
+# Source
+parser.add_argument('-s','--source', help='Source folder',required=True)
+parser.add_argument('-m','--mappingFile', help='Mapping file',required=True)
+parser.add_argument('-o','--outputFolder', help='Resulting RML file folder',required=True)
+parser.add_argument('-cm','--checkMappings', help='Should check mappings? 1/0',required=False)
+parser.add_argument('-cf','--checkFiles', help='Should check for new files? 1/0',required=False)
+
+args = parser.parse_args()
+print("""Running RMLMaker""")
+settings = {
+    "mappingChecks" : args.checkMappings or True,
+    "fileChecks" : args.checkFiles or True,
+    "source" : args.source or "input/"
+}
+main = Main(args.mappingFile,outputfile=args.outputFolder, settings=settings)
+main.writeAll()
+print("Finished.")
+
     # Run RML
 #main = Main()
 

@@ -20,11 +20,12 @@ def csvtojson(csvFileName, jsonFileName):
 def jsontocsv(jsonfilename, csvfilename, idlablename):
     print("Converting json file " + jsonfilename + " to csv file " + csvfilename + ".csv")
     df = pd.read_json(jsonfilename)
-    df.to_csv(csvfilename + ".csv", index_label = idlablename)
+    df.to_csv(csvfilename + ".csv")
 
 def allfileswithfiletype(dir, type):
     list = []
     for file in os.listdir(dir):
+        print(file)
         if file.endswith(type):
             list.append(file)
     return list

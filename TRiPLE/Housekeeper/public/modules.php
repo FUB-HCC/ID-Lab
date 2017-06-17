@@ -306,7 +306,7 @@ function clean_array(&$data, $options)
                             }*/
                         }
 
-                        // DO MODULES
+                        // DO PLUGINS
                         foreach ($PLUGINS as $plugin) {
                             $array[$k] = $plugin($v, $k);
                         }

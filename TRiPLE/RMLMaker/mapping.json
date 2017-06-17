@@ -8,54 +8,52 @@
         "content_pressemitteilung.json": "slug_de",
         "content_projekt.json": "slug_de",
         "content_publikation.json": "slug_de",
-        "public_content_ausstellung.json": "slug_de",
-        "public_content_category.json": "slug",
-        "public_content_event.json": "slug_de",
-        "public_content_mitglied.json": "slug_de",
-        "public_content_newsletter.json": "slug_de",
-        "public_content_pagecategoryrelationship.json": "slug_de",
-        "public_content_pagepagerelationship.json": "slug_de",
+        "content_ausstellung.json": "slug_de",
+        "content_category.json": "slug",
+        "content_event.json": "slug_de",
+        "content_mitglied.json": "slug_de",
+        "content_newsletter.json": "slug_de",
+        "content_pagecategoryrelationship.json": "slug_de",
+        "content_pagepagerelationship.json": "slug_de",
         "taggit_tag.json": "slug",
         "wagtaildocs_document.json": "file",
         "wagtailembeds_embed.json": "url",
         "wagtailimages_image.json": "id",
         "wagtailimages_rendition.json": "id"
     },
-    "folder": "input/",
+    "folder": "/Users/immanuelpelzer/Development/ID-Lab/TRiPLE/tmp/overseerOutput/",
     "prefixes": [
-        "@prefix prov: <http://example.com/eg/>. # ?? WOOOT",
-        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
-        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
-        "@prefix dso: <http://example.com/eg/>. # ?? WOOOT",
-        "@prefix rml: <http://semweb.mmlab.be/ns/rml#> .",
-        "@prefix rr: <http://www.w3.org/ns/r2rml#> .",
-        "@base <http://example.com/base>  .",
-        "@prefix timeline: <http://example.com/placeholder3/> . # ??? INSERT ONTOLOGY",
-        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
-        "@prefix dct: <http://purl.org/dc/terms/> .",
-        "@prefix fabio: <http://www.w3.org/2000/FABIO/rdf-schema#> .# ??? INSERT ONTOLOGY",
-        "@prefix schema: <http://schema.org/>.",
-        "@prefix vivo: <http://vivoweb.org/ontology/core#> .",
         "@prefix bio: <http://purl.org/vocab/bio/0.1/> .",
-        "@prefix foaf: <http://xmlns.com/foaf/0.1/> .",
-        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix sko: <http://example.com/lalalala/> . # ??? INSERT ONTOLOGY",
-        "#@prefix id: <http://example.com/id/> .",
-        "#@prefix ns: <http://example.com/ns/> .",
+        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.",
+        "@prefix dso: <http://purl.org/ontology/dso#>.",
+        "@prefix ID: <http://interdisciplinary-laboratory.hu-berlin.de/sd/ontology/>.",
         "@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .",
-        "@prefix schema.org: <http://example.com/placeholder2/> . # ??? INSERT ONTOLOGY",
-        "@prefix org: <http://www.w3.org/2002/07/owl#> . # INSERT ONTOLOGY",
-        "@prefix eg: <http://example.com/eg/> .",
-        "@prefix ql: <http://semweb.mmlab.be/ns/ql#> .",
+        "@base <http://example.com/base>.",
+        "@prefix event: <http://purl.org/NET/c4dm/event.owl#> .",
+        "@prefix prov: <http://www.w3.org/ns/prov#>.",
+        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+        "@prefix timeline: <http://purl.org/NET/c4dm/timeline.owl#> .",
+        "@prefix schema.org: <http://schema.org/> .",
+        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
         "@prefix dc: <http://purl.org/dc/elements/1.1/> .",
-        "@prefix event: <http://example.com/placeholder/> . # ??? INSERT ONTOLOGY",
-        "@prefix xsd: <http://www.w3.org/2001/XMLSchema> .",
-        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#>."
+        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.",
+        "@prefix schema: <http://schema.org/>.",
+        "@prefix fabio: <http://purl.org/spar/fabio/> .",
+        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+        "@prefix bibo: <http://purl.org/ontology/bibo/>.",
+        "@prefix sioc: <http://rdfs.org/sioc/ns#>.",
+        "@prefix foaf: <http://xmlns.com/foaf/0.1/> .",
+        "@prefix rr: <http://www.w3.org/ns/r2rml#> .",
+        "@prefix org: <http://www.w3.org/ns/org#> .",
+        "@prefix ql: <http://semweb.mmlab.be/ns/ql#> .",
+        "@prefix vivo: <http://vivoweb.org/ontology/core#> .",
+        "@prefix rml: <http://semweb.mmlab.be/ns/rml#> .",
+        "@prefix dct: <http://purl.org/dc/terms/> ."
     ],
     "variables": [
         {
             "key": "VAR_BASEURL",
-            "value": "http://www.example.com/"
+            "value": "http://interdisciplinary-laboratory.hu-berlin.de/sd/"
         }
     ],
     "files": [
@@ -86,63 +84,77 @@
                     "datatype": null
                 },
                 {
-                    "reference": "content_nachwuchsfoerderung|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_nachwuchsfoerderung|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_nachwuchsfoerderung|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_nachwuchsfoerderung|||content_mitglied",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_nachwuchsfoerderung|||content_publikation",
+                    "predicate": "skos:related",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": "content_nachwuchsfoerderung|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
+                    "language": null,
+                    "datatype": null
+                },
+                {
+                    "reference": null,
                     "predicate": null,
                     "ignore": true,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_nachwuchsfoerderung|||public_content_category",
+                    "reference": null,
                     "predicate": null,
                     "ignore": true,
                     "language": null,
@@ -178,50 +190,50 @@
                 },
                 {
                     "reference": "content_kooperation|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_kooperation|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "vcard:hasRole",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_kooperation|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_kooperation|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_kooperation|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_kooperation|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_kooperation|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_kooperation|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_kooperation|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -254,23 +266,23 @@
                     }
                 },
                 {
-                    "reference": "content_job|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_job|||content_mitglied",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_job|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "sioc:has_scope",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_job|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_job|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -281,7 +293,7 @@
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "projekt",
             "template": "slug_de",
-            "class": "foaf:Projekt",
+            "class": "foaf:Project",
             "mappings": [
                 {
                     "reference": "seo_title_de",
@@ -292,14 +304,12 @@
                 },
                 {
                     "parentTriplesMap": "ImageMapping",
-                    "ignore": true,
                     "joinCondition": {
                         "enabled": false
                     }
                 },
                 {
                     "parentTriplesMap": "FoerdererMapping",
-                    "ignore": true,
                     "joinCondition": {
                         "enabled": false
                     }
@@ -354,86 +364,86 @@
                     "datatype": null
                 },
                 {
-                    "reference": "content_projekt|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_projekt|||content_event",
+                    "predicate": "fabio:hasManifestation",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "fabio:hasManifestation",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_projekt|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_projekt|||content_ausstellung",
+                    "predicate": "fabio:hasManifestation",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_projekt|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_projekt|||content_mitglied",
+                    "predicate": "vcard:hasMember",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_job",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "sioc:scope_of",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_projekt|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_projekt|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_projekt|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -474,78 +484,78 @@
                 },
                 {
                     "reference": "content_podcast|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_podcast|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_podcast|||content_mitglied",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_podcast|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_podcast|||content_ausstellung",
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_podcast|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_podcast|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_podcast|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_podcast|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_podcast|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -579,78 +589,78 @@
                 },
                 {
                     "reference": "content_post|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_post|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_post|||content_mitglied",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_post|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_post|||content_ausstellung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_post|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_post|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_post|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_post|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_post|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -676,65 +686,65 @@
                     }
                 },
                 {
-                    "reference": "content_pressemitteilung|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_pressemitteilung|||content_event",
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_pressemitteilung|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_pressemitteilung|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_pressemitteilung|||content_mitglied",
+                    "predicate": "bibo:cites",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_pressemitteilung|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_pressemitteilung|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -745,7 +755,7 @@
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "publikation",
             "template": "slug_de",
-            "class": "dc:BibliographicResource",
+            "class": "dct:BibliographicResource",
             "mappings": [
                 {
                     "parentTriplesMap": "ImageMapping",
@@ -768,29 +778,29 @@
                 },
                 {
                     "reference": "content_publikation|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_publikation|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_publikation|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_publikation|||content_mitglied",
+                    "predicate": "dct:contributor",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "content_publikation|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -817,15 +827,15 @@
                 },
                 {
                     "reference": "content_publikation|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "fabio:isManifestationOf",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "content_publikation|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_publikation|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -845,8 +855,8 @@
                 },
                 {
                     "reference": "content_publikation|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -866,8 +876,8 @@
                 },
                 {
                     "reference": "content_publikation|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "predicate": "dct:references",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -886,16 +896,16 @@
                     "datatype": null
                 },
                 {
-                    "reference": "content_publikation|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_publikation|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
             ]
         },
         {
-            "filename": "public_content_ausstellung.json",
+            "filename": "content_ausstellung.json",
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "ausstellung",
             "template": "slug_de",
@@ -914,51 +924,51 @@
                     }
                 },
                 {
-                    "reference": "public_content_ausstellung|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_mitglied",
+                    "predicate": "event:agent",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_ausstellung|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_podcast",
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_ausstellung|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_post",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_ausstellung|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_projekt",
+                    "predicate": "fabio:isManifestationOf",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_ausstellung|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_ausstellung|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_ausstellung|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
             ]
         },
         {
-            "filename": "public_content_category.json",
+            "filename": "content_category.json",
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "category",
             "template": "slug",
@@ -1014,93 +1024,93 @@
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||public_content_newsletter",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_newsletter",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_pressemitteilung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_projekt",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_podcast",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_ausstellung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_post",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_publikation",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_nachwuchsfoerderung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_mitglied",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_job",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_job",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_category|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_category|||content_kooperation",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
             ]
         },
         {
-            "filename": "public_content_event.json",
+            "filename": "content_event.json",
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "event",
             "template": "slug_de",
@@ -1119,93 +1129,93 @@
                     }
                 },
                 {
-                    "reference": "public_content_event|||public_content_mitglied",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_mitglied",
+                    "predicate": "event:agent",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_ausstellung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_post",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_nachwuchsfoerderung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_podcast",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||public_content_newsletter",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_newsletter",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_pressemitteilung",
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_projekt",
+                    "predicate": "fabio:isManifestationOf",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_publikation",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||content_kooperation",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_kooperation",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_event|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_event|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
             ]
         },
         {
-            "filename": "public_content_mitglied.json",
+            "filename": "content_mitglied.json",
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "mitglied",
             "template": "slug_de",
@@ -1224,9 +1234,9 @@
                     }
                 },
                 {
-                    "reference": "public_content_mitglied|||content_post",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_post",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -1238,9 +1248,9 @@
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_pressemitteilung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_pressemitteilung",
+                    "predicate": "bibo:citedBy",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -1259,37 +1269,37 @@
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_nachwuchsfoerderung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_nachwuchsfoerderung",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_event",
+                    "predicate": "event:isAgentIn",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||public_content_ausstellung",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_ausstellung",
+                    "predicate": "event:isAgentIn",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_publikation",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_publikation",
+                    "predicate": "ID:contributedTo",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_podcast",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_podcast",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
@@ -1301,44 +1311,44 @@
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_projekt",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_projekt",
+                    "predicate": "foaf:currentProject",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "telefonnummer",
                     "predicate": "vcard:hasTelephone",
-                    "ignore": false,
+                    "ignore": true,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||content_job",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_job",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
                     "reference": "email",
                     "predicate": "vcard:hasEmail",
-                    "ignore": false,
+                    "ignore": true,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_mitglied|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_mitglied|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
             ]
         },
         {
-            "filename": "public_content_newsletter.json",
+            "filename": "content_newsletter.json",
             "templatePrefix": "VAR_BASEURL",
             "templatePath": "newsletter",
             "template": "slug_de",
@@ -1357,16 +1367,16 @@
                     }
                 },
                 {
-                    "reference": "public_content_newsletter|||public_content_event",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_newsletter|||content_event",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 },
                 {
-                    "reference": "public_content_newsletter|||public_content_category",
-                    "predicate": null,
-                    "ignore": true,
+                    "reference": "content_newsletter|||content_category",
+                    "predicate": "skos:related",
+                    "ignore": false,
                     "language": null,
                     "datatype": null
                 }
@@ -2014,7 +2024,14 @@
             "datatype": null
         },
         {
-            "reference": "public_content_category",
+            "reference": "content_category",
+            "predicate": null,
+            "ignore": true,
+            "language": null,
+            "datatype": null
+        },
+        {
+            "reference": null,
             "predicate": null,
             "ignore": true,
             "language": null,

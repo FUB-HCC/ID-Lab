@@ -1,6 +1,0 @@
-TRiPLE - To RDF PipelinE
-
-Housekeeper - PHP based HTTP API for cleaning csv files for usage in RDF
-Overseer - Python based tool for integrating content linked by junction tables into json files
-PublicationConverter - PHP based script to convert the Cluster citation format to bibtex using grobid
-RMLMaker - Python based guided script for generating RML from arbitrary json files 

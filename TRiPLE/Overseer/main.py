@@ -5,29 +5,65 @@ import os
 import mappingloader
 from subprocess import call
 import json
+import json
+from pprint import pprint
+import csv
+import argparse
 
-inputpathjson = "resources/cluster/input/json/" # Input path of json files
-outputpathjsonwithmapping = "resources/output/jsonandmapping/" # Output folder
+
+# Getting arguments
+parser = argparse.ArgumentParser(description='Overseer.')
+# Source
+parser.add_argument('-s','--source', help='The folder where the json input files are.',required=True)
+parser.add_argument('-o','--output', help='The folder where the json files with mapping are gonna be.',required=True)
+args = parser.parse_args()
+
+# END Getting arguments
+
+inputpathjson = args.source # "resources/cluster/input/json/" # Input path of json files
+outputpathjsonwithmapping = args.output # Output folder
 
 
-# inputpathcsv = "resources/cluster/input/csv/" # Input path
-# outputpathjson = "resources/output/json/" # Output path
-# convert all files in inputpath to json
+
+# with open('resources/bla/sparql.json') as data_file:
+#     data = json.load(data_file)
+#
+# for key in data.keys():
+#     value = data[key]
+#     with open("resources/bla/out/sparql" + key + '.csv', 'w') as csvfile:
+#         spamwriter = csv.writer(csvfile, delimiter=',',
+#                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
+#         for val in value:
+#             print(val)
+#             spamwriter.writerow([str(val)])
+#
+#
+#
+#
+# sys.exit(0);
+
+# inputpathcsv = "resources/bla/" # Input path
+# outputpathjson = "resources/bla/" # Output path
+# # convert all files in inputpath to json
 # for file in converter.allfileswithfiletype(inputpathcsv, ".csv"):
 #    converter.csvtojson(inputpathcsv + file, outputpathjson + os.path.splitext(file)[0])
 # print('Finished converting json.')
 # sys.exit(0)
 
-# outputpathcsv = "resources/output/csv/"
-# convert all files in inputpath to csv
-#for file in converter.allfileswithfiletype(inputpath, ".json"):
-#    converter.jsontocsv(inputpath + file, outputpath + os.path.splitext(file)[0], "page_ptr_id");
-#print('Finished converting to csv.')
+# inputpath = "resources/bla/" # Input path
+# outputpath = "resources/bla/"
+# #convert all files in inputpath to csv
+# for file in converter.allfileswithfiletype(inputpath, ".json"):
+#    converter.jsontocsv(inputpath + file, outputpath + os.path.splitext(file)[0], None);
+# print('Finished converting to csv.')
+# sys.exit(0);
+
+
 
 alljsonfiles = converter.allfileswithfiletype(inputpathjson, ".json") # read converted data
 
-alljsonfiles.remove('public_content_pagecategoryrelationship.json')
-alljsonfiles.remove('public_content_pagepagerelationship.json')
+alljsonfiles.remove('content_pagecategoryrelationship.json')
+alljsonfiles.remove('content_pagepagerelationship.json')
 
 
 def readjsonfileintomapping(filename, files, idmapping):
@@ -50,7 +86,7 @@ print("Loading content finished.")
 
 # load mapping
 print("Loading mapping")
-mappingloader.readp2pmapping('public_content_pagepagerelationship.json', contentfiles, idmapping, inputpathjson);
+mappingloader.readp2pmapping('content_pagepagerelationship.json', contentfiles, idmapping, inputpathjson);
 
 # Loading categories
 categories = {}
@@ -62,10 +98,10 @@ def readcategoriesfileintomapping(filename, files, idmapping):
                 a["filename"] = filename
                 idmapping[a["id"]] = a
 print("Loading categories")
-readcategoriesfileintomapping("public_content_category.json", contentfiles, categories)
+readcategoriesfileintomapping("content_category.json", contentfiles, categories)
 
 # Loading category mappings
-mappingloader.readp2cmapping('public_content_pagecategoryrelationship.json',  contentfiles, idmapping, inputpathjson, categories)
+mappingloader.readp2cmapping('content_pagecategoryrelationship.json',  contentfiles, idmapping, inputpathjson, categories)
 
 # Write connected files
 for f in contentfiles:
