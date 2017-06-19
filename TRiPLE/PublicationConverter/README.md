@@ -18,6 +18,7 @@ Make sure your input file is formatted like this: `slug|citation`
 For example:
 `comment-faire-la-technique-comme-pouvoir|Ribault, Patricia (2015): Comment faire? La technique comme pouvoir. In: Golsenne, T./Ribault, P. (Eds.): Essais de Bricologie. Ethnologie de l’art et du design contemporains. Revue Techniques et Culture, no. 64, Paris: Éditions EHESS.`
 
+The slug will be used for the rdf:about tag and thus connect the metadata to the cluster homepage data. 
 
 ## Usage:
 
