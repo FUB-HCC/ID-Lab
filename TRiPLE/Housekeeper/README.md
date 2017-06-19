@@ -27,7 +27,7 @@ Possible URL Parameters.
 - ?slugify=row1;row2
 - ?delete=row3 // Rows to delete from data
 - ?skip=row1 // Row(s) to skip (no cleansing)
-- ?outputType=json // Or csv
+- ?outputType=json // Or csv (case sensitive)
 - ?htmlEntities=row1;row2 // Apply 
 htmlentities(rowEntry) instead of htmlspecialchars
 
