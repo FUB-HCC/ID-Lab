@@ -13,6 +13,11 @@ You will need a running Grobid instance.
 5. Put the resulting model into `/grobid-master/grobid-home/models/name/citation`
 6. Make sure to have the Grobid service running (http://grobid.readthedocs.io/en/latest/Grobid-service/). Change ip in $requestURL in ./Grobit script/citation_parser.php if not 0.0.0.0:8080. If you have problems with wapiti corruption try using the [docker container](http://grobid.readthedocs.io/en/latest/Grobid-docker/). 
 
+## Input file format
+Make sure your input file is formatted like this: `slug|citation`
+For example:
+`comment-faire-la-technique-comme-pouvoir|Ribault, Patricia (2015): Comment faire? La technique comme pouvoir. In: Golsenne, T./Ribault, P. (Eds.): Essais de Bricologie. Ethnologie de l’art et du design contemporains. Revue Techniques et Culture, no. 64, Paris: Éditions EHESS.`
+
 
 ## Usage:
 
